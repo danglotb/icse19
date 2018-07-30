@@ -11,6 +11,7 @@ prefix_bug_dot_jar = prefix_dataset + "bugs-dot-jar/"
 suffix_properties = ".properties"
 prefix_result = "results/august-2018/"
 suffix_project = "_fixed"
+relative_test_path = ".bugs-dot-jar/test-results.txt"
 relative_patch_path = ".bugs-dot-jar/developer-patch.diff"
 maven_home = ""
 current_output_log = ""
@@ -34,15 +35,17 @@ def get_all_branches_of_bugs(project):
 
 
 def get_module(project):
-    result = subprocess.check_output(
-        " ".join(["cat", prefix_bug_dot_jar + project + "/" + relative_patch_path, "|",
-                  "grep", "\"\\-\\-\\-\"", "|",
-                  "cut", "-d", "\" \"", "-f", "2"]), shell=True)
-    if result.startswith("a/src/"):
-        return ""
-    else:
-        return result.split("/")[1]
-
+    with open(prefix_bug_dot_jar + project + "/"+ relative_test_path, 'r') as test_result:
+        for line in test_result:
+            if line.startswith("[INFO] Surefire report directory:"):
+                splitted_line = line.split(" ")[-1].split("/")
+                for element in splitted_line:
+                    if element == "target":
+                        candidate = splitted_line[splitted_line.index(element) - 1]
+                        if candidate == project:
+                            return ""
+                        else:
+                            return candidate
 
 def print_and_call(cmd):
     global current_output_log
@@ -73,3 +76,6 @@ def init(argv):
         maven_home = "~/apache-maven-3.3.9/bin/"
     else:
         maven_home = ""
+
+if __name__ == '__main__':
+    print get_module(project="accumulo")

@@ -11,7 +11,7 @@ def run_one(project, branch):
     if branch == "":
         return
     toolbox.initialize_project_for_branch(project, branch)
-    tests_to_be_amplified = toolbox.readTestToBeExecuted(+ project, branch)
+    tests_to_be_amplified = toolbox.readTestToBeExecuted(project, branch)
     if len(tests_to_be_amplified) == 0:
         return
     test_classes = []

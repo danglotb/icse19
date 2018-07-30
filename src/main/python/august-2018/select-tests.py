@@ -4,7 +4,7 @@ import os.path
 
 def run(project):
     result = toolbox.get_all_branches_of_bugs(project)
-    for res in result[1:6]:
+    for res in result[23:24]:
         run_one(project, res)
 
 def run_one(project, branch):
@@ -17,14 +17,14 @@ def run_one(project, branch):
     # run maven plugin to compute the list
     code = toolbox.print_and_call(
         " ".join(
-            ["cd", project + "/" + targetModule, "&&",
+            ["cd", toolbox.prefix_bug_dot_jar + project + "/" + targetModule, "&&",
              toolbox.maven_home + "mvn", "clean",
              "versions:use-latest-versions",
              "-Dincludes=junit:junit",
              "eu.stamp-project:diff-test-selection:0.2:list",
              "-DpathToDiff=" + ("../" if not targetModule == "" else "") + toolbox.relative_patch_path,
              "-DpathToOtherVersion=../" + ("../" if not targetModule == "" else "") + project + toolbox.suffix_project + "/",
-             "-DoutputPath=../" + ("../" if not targetModule == "" else "") + path_to_csv,
+             "-DoutputPath=../../" + ("../" if not targetModule == "" else "") + path_to_csv,
              "-Dreport=CSV"]
         )
     )

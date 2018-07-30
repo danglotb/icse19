@@ -25,16 +25,12 @@ hs_err_pid*
 
 .idea/
 target/
-diff-finder.iml
+*.iml
 
 # test class to play with java and try out piece of code
 src/test/java/Playground
 
 dataset/
-!dataset/january-2018/*.properties
-!dataset/january-2018/*.json
-!dataset/may-2018/*.properties
-!dataset/may-2018/*.json
 !dataset/august-2018/*.csv
 *.pyc
 *.img

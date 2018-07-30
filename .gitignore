@@ -1,0 +1,41 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.idea/
+target/
+diff-finder.iml
+
+# test class to play with java and try out piece of code
+src/test/java/Playground
+
+dataset/
+!dataset/january-2018/*.properties
+!dataset/january-2018/*.json
+!dataset/may-2018/*.properties
+!dataset/may-2018/*.json
+!dataset/august-2018/*.csv
+*.pyc
+*.img
+src/test/

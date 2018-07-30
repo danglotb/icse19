@@ -1,5 +1,9 @@
 import subprocess
 import csv
+import shlex
+import logging
+import subprocess
+from StringIO import StringIO
 
 absolute_path_dspot = "/home/bdanglot/workspace/dspot/dspot/target/dspot-1.1.1-SNAPSHOT-jar-with-dependencies.jar"
 prefix_dataset = "dataset/august-2018/"
@@ -9,6 +13,7 @@ prefix_result = "results/august-2018/"
 suffix_project = "_fixed"
 relative_patch_path = ".bugs-dot-jar/developer-patch.diff"
 maven_home = ""
+current_output_log = ""
 
 
 def readTestToBeExecuted(project, branch):
@@ -40,13 +45,15 @@ def get_module(project):
 
 
 def print_and_call(cmd):
-    print cmd
-    return subprocess.call(cmd, shell=True)
+    global current_output_log
+    with open(current_output_log, "a") as f:
+        return subprocess.call(cmd, shell=True, stdout=f, stderr=f)
 
 
 # this method clean, checkout the correct branch and install.
 # then it copies the project into ../project_fixed and apply the developer patch
 def initialize_project_for_branch(project, branch):
+    output = prefix_dataset + project + "/" + "test-selection_" + branch.split("/")[-1] + ".log"
     global maven_home
     # setting the branch
     print_and_call(" ".join(["cd", prefix_bug_dot_jar + project, "&&",

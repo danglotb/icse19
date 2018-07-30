@@ -13,7 +13,7 @@ relative_test_path = ".bugs-dot-jar/test-results.txt"
 relative_patch_path = ".bugs-dot-jar/developer-patch.diff"
 maven_home = ""
 current_output_log = ""
-
+single_module_projects = ["commons-math"]
 
 def readTestToBeExecuted(project, branch):
     tests_to_be_amplified = {}
@@ -33,6 +33,8 @@ def get_all_branches_of_bugs(project):
 
 
 def get_module(project):
+    if project in single_module_projects:
+        return ""
     with open(prefix_bug_dot_jar + project + "/"+ relative_test_path, 'r') as test_result:
         for line in test_result:
             if line.startswith("[INFO] Surefire report directory:"):
@@ -49,7 +51,7 @@ def print_and_call(cmd):
     global current_output_log
     print cmd
     with open(current_output_log, "a") as f:
-        f.write(cmd)
+        f.write(cmd + "\n")
         return subprocess.call(cmd, shell=True, stdout=f, stderr=f)
 
 

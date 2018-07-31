@@ -1,0 +1,60 @@
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
+cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
+fatal: /usr/lib/git-core/git-stash cannot be used without a working tree.
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git stash && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-1183_cfbf5999 && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
+cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
+patching file core/src/main/java/org/apache/accumulo/core/iterators/Combiner.java
+cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-core 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-core ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ accumulo-core ---
+[INFO] Major version changes allowed
+[INFO] 
+[INFO] --- diff-test-selection:0.2:list (default-cli) @ accumulo-core ---
+[INFO] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building accumulo-core 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.apache.accumulo:cloudtrace:jar:1.5.0-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.076 s
+[INFO] Finished at: 2018-07-31T13:59:53+02:00
+[INFO] Final Memory: 27M/1963M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project accumulo-core: Could not resolve dependencies for project org.apache.accumulo:accumulo-core:jar:1.5.0-SNAPSHOT: Failure to find org.apache.accumulo:cloudtrace:jar:1.5.0-SNAPSHOT in http://repository.apache.org/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+ERROR: A problem was encountered while rendering the report: Clover registry file "/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/clover/clover.db" does not exist, cannot be read or is a directory. 
+Please ensure Clover has instrumented your source files. 
+You may need to remove existing .class files for this to occur.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.128 s
+[INFO] Finished at: 2018-07-31T13:59:57+02:00
+[INFO] Final Memory: 38M/1477M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy/core && ~/apache-maven-3.3.9/bin/mvn clean versions:use-latest-versions -Dincludes=junit:junit eu.stamp-project:diff-test-selection:0.2:list -DpathToDiff=../.bugs-dot-jar/developer-patch.diff -DpathToOtherVersion=../../accumulo_fixed/ -DoutputPath=../../../accumulo/data_test-selection_bugs-dot-jar_ACCUMULO-1183_cfbf5999.csv -Dreport=CSV
+rm -rf accumulo_fixed

@@ -2,7 +2,6 @@ import sys
 import toolbox
 import os.path
 
-
 def run(project, lower_bound=1, upper_bound=-1):
     result = toolbox.get_all_branches_of_bugs(project)
     print lower_bound, upper_bound
@@ -15,6 +14,7 @@ def run_one(project, branch):
     toolbox.current_output_log = os.path.abspath(toolbox.prefix_dataset + project + "/log_test-selection_" + branch.split("/")[-1] + ".log")
     path_to_csv ="../../" + ("../" if not targetModule == "" else "") + project +  "/data_test-selection_" + branch.split("/")[-1] + ".csv"
     if os.path.isfile(path_to_csv):
+        print "already computed!"
         return
     toolbox.initialize_project_for_branch(project, branch)
     # run maven plugin to compute the list

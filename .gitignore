@@ -31,6 +31,8 @@ target/
 src/test/java/Playground
 
 dataset/
+!dataset/august-2018/commons-math/
+!dataset/august-2018/accumulo/
 !dataset/august-2018/*.csv
 *.pyc
 *.img

@@ -1,4 +1,0 @@
-org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest;writeBadVisibility;testRealWrite
-org.apache.accumulo.core.file.FileOperationsTest;handlesFilenamesWithMoreThanOneDot
-org.apache.accumulo.core.client.mapred.AccumuloFileOutputFormatTest;writeBadVisibility;testRealWrite
-org.apache.accumulo.core.client.mock.MockTableOperationsTest;testImport;testFailsWithNonEmptyFailureDirectory;testFailsWithNoTable

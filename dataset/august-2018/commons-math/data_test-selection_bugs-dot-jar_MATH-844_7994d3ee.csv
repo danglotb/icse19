@@ -1,0 +1,5 @@
+org.apache.commons.math3.util.OpenIntToFieldTest;testPutAbsentOnExisting;testRemoveAbsent;testContainsKey;testGetAbsent
+org.apache.commons.math3.fraction.FractionTest;testSerial;testDoubleConstructor;testConstructor;testGoldenRatio;testConstructorDouble;testDigitLimitConstructor;testIntegerOverflow;testEpsilonLimitConstructor
+org.apache.commons.math3.linear.MatrixUtilsTest;testCreateRowFieldMatrix;testcreateFieldMatrix;testCreateColumnFieldMatrix
+org.apache.commons.math3.linear.SparseFieldVectorTest;testMapFunctions;testBasicFunctions
+org.apache.commons.math3.fraction.FractionFormatTest;testDoubleFormat;testLongFormat

@@ -1,0 +1,1 @@
+org.apache.accumulo.core.util.StatTest;testGetMin;testClear;testGetAverage;testGetStdDev;testGetSum;testGetMax

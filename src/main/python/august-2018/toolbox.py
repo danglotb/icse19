@@ -22,8 +22,6 @@ def readTestToBeExecuted(project, branch):
     with open(path_to_csv_file, 'rb') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=';')
         for row in spamreader:
-            print row[1:]
-            print list(set(row[1:]))
             tests_to_be_amplified[row[0]] = list(set(row[1:]))
     return tests_to_be_amplified
 

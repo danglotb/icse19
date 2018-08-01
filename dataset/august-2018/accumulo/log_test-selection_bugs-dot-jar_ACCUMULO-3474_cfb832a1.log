@@ -1,0 +1,148 @@
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
+cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
+Previous HEAD position was 5563946... Added bug report.
+HEAD is now at 14047c6... Added bug report.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo
+[INFO] Trace
+[INFO] Fate
+[INFO] Start
+[INFO] Core
+[INFO] Simple Examples
+[INFO] Server Base
+[INFO] GC Server
+[INFO] Master Server
+[INFO] Monitor Server
+[INFO] Tracer Server
+[INFO] Tablet Server
+[INFO] MiniCluster
+[INFO] Native Libraries
+[INFO] Testing
+[INFO] Proxy
+[INFO] Assemblies
+[INFO] Documentation
+[INFO] Accumulo Maven Plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-project ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy (includes = [**/*.pyc, **/*.so], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-project ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-project ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-project ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-project ---
+[INFO] 69 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 15 resources included (use -debug for more details)
+Warning: org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Warning: org.apache.xerces.parsers.SAXParser: Feature 'http://javax.xml.XMLConstants/feature/secure-processing' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+[INFO] Rat check: Summary of files. Unapproved: 4 unknown: 4 generated: 0 approved: 8 licence.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Accumulo .................................... FAILURE [  3.159 s]
+[INFO] Trace .............................................. SKIPPED
+[INFO] Fate ............................................... SKIPPED
+[INFO] Start .............................................. SKIPPED
+[INFO] Core ............................................... SKIPPED
+[INFO] Simple Examples .................................... SKIPPED
+[INFO] Server Base ........................................ SKIPPED
+[INFO] GC Server .......................................... SKIPPED
+[INFO] Master Server ...................................... SKIPPED
+[INFO] Monitor Server ..................................... SKIPPED
+[INFO] Tracer Server ...................................... SKIPPED
+[INFO] Tablet Server ...................................... SKIPPED
+[INFO] MiniCluster ........................................ SKIPPED
+[INFO] Native Libraries ................................... SKIPPED
+[INFO] Testing ............................................ SKIPPED
+[INFO] Proxy .............................................. SKIPPED
+[INFO] Assemblies ......................................... SKIPPED
+[INFO] Documentation ...................................... SKIPPED
+[INFO] Accumulo Maven Plugin .............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.979 s
+[INFO] Finished at: 2018-08-01T10:27:04+02:00
+[INFO] Final Memory: 23M/335M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:0.10:check (check-licenses) on project accumulo-project: Too many files with unapproved license: 4 See RAT report in: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/target/rat.txt -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-3474_cfb832a1 && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
+cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
+patching file core/src/main/java/org/apache/accumulo/core/util/shell/Shell.java
+cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-core ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core (includes = [**/*.pyc, **/*.so], excludes = [])
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ accumulo-core ---
+[INFO] Major version changes allowed
+[INFO] 
+[INFO] --- diff-test-selection:0.2:list (default-cli) @ accumulo-core ---
+[INFO] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.apache.accumulo:accumulo-fate:jar:1.6.2-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.accumulo:accumulo-start:jar:1.6.2-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.accumulo:accumulo-trace:jar:1.6.2-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.489 s
+[INFO] Finished at: 2018-08-01T10:27:11+02:00
+[INFO] Final Memory: 11M/241M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project accumulo-core: Could not resolve dependencies for project org.apache.accumulo:accumulo-core:jar:1.6.2-SNAPSHOT: The following artifacts could not be resolved: org.apache.accumulo:accumulo-fate:jar:1.6.2-SNAPSHOT, org.apache.accumulo:accumulo-start:jar:1.6.2-SNAPSHOT, org.apache.accumulo:accumulo-trace:jar:1.6.2-SNAPSHOT: Failure to find org.apache.accumulo:accumulo-fate:jar:1.6.2-SNAPSHOT in http://repository.apache.org/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+ERROR: A problem was encountered while rendering the report: Clover registry file "/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/clover/clover.db" does not exist, cannot be read or is a directory. 
+Please ensure Clover has instrumented your source files. 
+You may need to remove existing .class files for this to occur.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.161 s
+[INFO] Finished at: 2018-08-01T10:27:14+02:00
+[INFO] Final Memory: 28M/453M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy/core && ~/apache-maven-3.3.9/bin/mvn clean versions:use-latest-versions -Dincludes=junit:junit eu.stamp-project:diff-test-selection:0.2:list -DpathToDiff=../.bugs-dot-jar/developer-patch.diff -DpathToOtherVersion=../../accumulo_fixed/ -DoutputPath=../../../accumulo/data_test-selection_bugs-dot-jar_ACCUMULO-3474_cfb832a1.csv -Dreport=CSV
+rm -rf accumulo_fixed

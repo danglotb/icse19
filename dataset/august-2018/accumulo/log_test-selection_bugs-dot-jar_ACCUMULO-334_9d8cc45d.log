@@ -1,0 +1,262 @@
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
+cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
+Previous HEAD position was e2e8476... Added bug report.
+HEAD is now at 1754271... Added bug report.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo
+[INFO] Trace
+[INFO] Fate
+[INFO] Start
+[INFO] Core
+[INFO] Simple Examples
+[INFO] Server Base
+[INFO] GC Server
+[INFO] Master Server
+[INFO] Tablet Server
+[INFO] MiniCluster
+[INFO] Monitor Server
+[INFO] Native Libraries
+[INFO] Tracer Server
+[INFO] Testing
+[INFO] Proxy
+[INFO] Assemblies
+[INFO] Documentation
+[INFO] Accumulo Maven Plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-project ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy (includes = [**/*.pyc, **/*.so], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-project ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-project ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-project ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-project ---
+[INFO] 69 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 14 resources included (use -debug for more details)
+Warning: org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Warning: org.apache.xerces.parsers.SAXParser: Feature 'http://javax.xml.XMLConstants/feature/secure-processing' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+[INFO] Rat check: Summary of files. Unapproved: 4 unknown: 4 generated: 0 approved: 7 licence.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Accumulo .................................... FAILURE [  3.061 s]
+[INFO] Trace .............................................. SKIPPED
+[INFO] Fate ............................................... SKIPPED
+[INFO] Start .............................................. SKIPPED
+[INFO] Core ............................................... SKIPPED
+[INFO] Simple Examples .................................... SKIPPED
+[INFO] Server Base ........................................ SKIPPED
+[INFO] GC Server .......................................... SKIPPED
+[INFO] Master Server ...................................... SKIPPED
+[INFO] Tablet Server ...................................... SKIPPED
+[INFO] MiniCluster ........................................ SKIPPED
+[INFO] Monitor Server ..................................... SKIPPED
+[INFO] Native Libraries ................................... SKIPPED
+[INFO] Tracer Server ...................................... SKIPPED
+[INFO] Testing ............................................ SKIPPED
+[INFO] Proxy .............................................. SKIPPED
+[INFO] Assemblies ......................................... SKIPPED
+[INFO] Documentation ...................................... SKIPPED
+[INFO] Accumulo Maven Plugin .............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.858 s
+[INFO] Finished at: 2018-08-01T10:23:03+02:00
+[INFO] Final Memory: 26M/392M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:0.10:check (check-licenses) on project accumulo-project: Too many files with unapproved license: 4 See RAT report in: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/target/rat.txt -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-334_9d8cc45d && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
+cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
+patching file fate/src/main/java/org/apache/accumulo/fate/zookeeper/ZooCache.java
+patching file fate/src/main/java/org/apache/accumulo/fate/zookeeper/ZooUtil.java
+cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fate 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-fate ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate (includes = [**/*.pyc, **/*.so], excludes = [])
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ accumulo-fate ---
+[INFO] Major version changes allowed
+[INFO] 
+[INFO] --- diff-test-selection:0.2:list (default-cli) @ accumulo-fate ---
+[INFO] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fate 1.6.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-fate ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate (includes = [**/*.pyc, **/*.so], excludes = [])
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ accumulo-fate ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 29 files (3 packages).
+[INFO] Elapsed time = 1.136 secs. (25.528 files/sec, 4,136.444 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 12 files (3 packages).
+[INFO] 49 test methods detected.
+[INFO] Elapsed time = 0.441 secs. (27.211 files/sec, 3,528.345 srclines/sec)
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.3.0:verify (verify-sorted-pom) @ accumulo-fate ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-fate ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-fate ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.10:check (check-licenses) @ accumulo-fate ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] No excludes explicitly specified.
+[INFO] 43 resources included (use -debug for more details)
+Warning: org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+Compiler warnings:
+  WARNING:  'org.apache.xerces.jaxp.SAXParserImpl: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.'
+Warning: org.apache.xerces.parsers.SAXParser: Feature 'http://javax.xml.XMLConstants/feature/secure-processing' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://javax.xml.XMLConstants/property/accessExternalDTD' is not recognized.
+Warning: org.apache.xerces.parsers.SAXParser: Property 'http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit' is not recognized.
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 43 licence.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/src/main/resources
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ accumulo-fate ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 29 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ accumulo-fate ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ accumulo-fate ---
+[INFO] Surefire report directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.fate.AgeOffStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec - in org.apache.accumulo.fate.AgeOffStoreTest
+Running org.apache.accumulo.fate.zookeeper.DistributedReadWriteLockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in org.apache.accumulo.fate.zookeeper.DistributedReadWriteLockTest
+Running org.apache.accumulo.fate.zookeeper.TransactionWatcherTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in org.apache.accumulo.fate.zookeeper.TransactionWatcherTest
+Running org.apache.accumulo.fate.zookeeper.RetryTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.28 sec - in org.apache.accumulo.fate.zookeeper.RetryTest
+Running org.apache.accumulo.fate.zookeeper.ZooCacheFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec - in org.apache.accumulo.fate.zookeeper.ZooCacheFactoryTest
+Running org.apache.accumulo.fate.zookeeper.ZooCacheTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.078 sec - in org.apache.accumulo.fate.zookeeper.ZooCacheTest
+Running org.apache.accumulo.fate.zookeeper.ZooSessionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.198 sec - in org.apache.accumulo.fate.zookeeper.ZooSessionTest
+Running org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.109 sec <<< FAILURE! - in org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest
+testEquality(org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest)  Time elapsed: 0.049 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@161cd475> but was:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@532760d8>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest.__CLR4_2_02agdql29e(ZooKeeperConnectionInfoTest.java:27)
+	at org.apache.accumulo.fate.zookeeper.ZooKeeperConnectionInfoTest.testEquality(ZooKeeperConnectionInfoTest.java:26)
+
+Running org.apache.accumulo.fate.zookeeper.ZooReaderWriterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.389 sec - in org.apache.accumulo.fate.zookeeper.ZooReaderWriterTest
+Running org.apache.accumulo.fate.ReadOnlyStoreTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 sec - in org.apache.accumulo.fate.ReadOnlyStoreTest
+Running org.apache.accumulo.fate.util.AddressUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec - in org.apache.accumulo.fate.util.AddressUtilTest
+
+Results :
+
+Failed tests: 
+  ZooKeeperConnectionInfoTest.testEquality:26->__CLR4_2_02agdql29e:27 expected:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@161cd475> but was:<org.apache.accumulo.fate.zookeeper.ZooUtil$ZooKeeperConnectionInfo@532760d8>
+
+Tests run: 49, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 36.886 s
+[INFO] Finished at: 2018-08-01T10:23:46+02:00
+[INFO] Final Memory: 30M/426M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project accumulo-fate: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Writing HTML report to '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/clover/report'
+Done. Processed 3 packages in 1462ms (487ms per package).
+[INFO] org.apache.accumulo.fate.zookeeper.ZooCacheTest;testGet_Retry2_ConnectionLoss;testGet_Retry_ConnectionLoss
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 46.128 s
+[INFO] Finished at: 2018-08-01T10:23:51+02:00
+[INFO] Final Memory: 37M/504M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate && ~/apache-maven-3.3.9/bin/mvn clean versions:use-latest-versions -Dincludes=junit:junit eu.stamp-project:diff-test-selection:0.2:list -DpathToDiff=../.bugs-dot-jar/developer-patch.diff -DpathToOtherVersion=../../accumulo_fixed/ -DoutputPath=../../../accumulo/data_test-selection_bugs-dot-jar_ACCUMULO-334_9d8cc45d.csv -Dreport=CSV
+rm -rf accumulo_fixed

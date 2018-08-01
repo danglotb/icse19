@@ -1,0 +1,2 @@
+org.apache.accumulo.core.client.mock.MockConnectorTest;testAggregation
+org.apache.accumulo.core.iterators.user.CombinerTest;maxMinTest;sumAllColumns;test4;testDeepCopy;test5;test2;test3;test6;test7;sumArrayTest;valueIteratorTest

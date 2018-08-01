@@ -1,0 +1,941 @@
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
+cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
+Previous HEAD position was 14047c6... Added bug report.
+HEAD is now at fd1308a... Added bug report.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo Project
+[INFO] Trace
+[INFO] Fate
+[INFO] Start
+[INFO] Core
+[INFO] Server
+[INFO] Examples
+[INFO] Simple Examples
+[INFO] MiniCluster
+[INFO] Testing
+[INFO] Proxy
+[INFO] Assemblies
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo Project 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.pom
+3/13 KB   5/13 KB   8/13 KB   11/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.pom (13 KB at 17.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.jar
+3/112 KB   5/112 KB   8/112 KB   11/112 KB   13/112 KB   16/112 KB   19/112 KB   21/112 KB   24/112 KB   27/112 KB   29/112 KB   32/112 KB   36/112 KB   40/112 KB   44/112 KB   48/112 KB   52/112 KB   56/112 KB   60/112 KB   64/112 KB   68/112 KB   72/112 KB   76/112 KB   80/112 KB   84/112 KB   88/112 KB   92/112 KB   96/112 KB   100/112 KB   104/112 KB   108/112 KB   112/112 KB   112/112 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.13/maven-checkstyle-plugin-2.13.jar (112 KB at 112.3 KB/sec)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-project ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test (includes = [**/*.so], excludes = [])
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-project ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-project ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-project ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-project ---
+Downloading: https://repo.maven.apache.org/maven2/com/puppycrawl/tools/checkstyle/6.1.1/checkstyle-6.1.1.pom
+3/30 KB      5/30 KB   8/30 KB   11/30 KB   13/30 KB   16/30 KB   19/30 KB   21/30 KB   24/30 KB   27/30 KB   29/30 KB   30/30 KB              Downloaded: https://repo.maven.apache.org/maven2/com/puppycrawl/tools/checkstyle/6.1.1/checkstyle-6.1.1.pom (30 KB at 70.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.3/antlr4-runtime-4.3.pom
+3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.3/antlr4-runtime-4.3.pom (5 KB at 22.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/antlr/antlr4-master/4.3/antlr4-master-4.3.pom
+3/8 KB   5/8 KB   8/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/antlr/antlr4-master/4.3/antlr4-master-4.3.pom (8 KB at 33.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.pom
+3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.pom (4 KB at 15.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.pom (2 KB at 7.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/puppycrawl/tools/checkstyle/6.1.1/checkstyle-6.1.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.3/antlr4-runtime-4.3.jar
+Downloading: https://repo.maven.apache.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.jar
+Downloading: https://repo.maven.apache.org/maven2/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.jar
+3/337 KB   2/10 KB   3/337 KB   2/10 KB   3/337 KB   3/25 KB   2/10 KB   3/337 KB   3/991 KB   3/25 KB   2/10 KB   5/337 KB   3/991 KB   3/25 KB   2/10 KB   5/337 KB   3/991 KB   5/25 KB   5/10 KB   5/337 KB   3/991 KB   5/25 KB   5/10 KB   5/337 KB   3/991 KB   8/25 KB   5/10 KB   5/337 KB   5/991 KB   8/25 KB   5/10 KB   8/337 KB   5/991 KB   8/25 KB   8/10 KB   8/337 KB   5/991 KB   8/25 KB   8/10 KB   8/337 KB   8/991 KB   8/25 KB   8/10 KB   8/337 KB   8/991 KB   11/25 KB   8/10 KB   11/337 KB   8/991 KB   11/25 KB   8/10 KB   11/337 KB   11/991 KB   11/25 KB   10/10 KB   11/337 KB   11/991 KB   11/25 KB   10/10 KB   11/337 KB   11/991 KB   13/25 KB   10/10 KB   11/337 KB   13/991 KB   13/25 KB   10/10 KB   11/337 KB   13/991 KB   16/25 KB   10/10 KB   11/337 KB   16/991 KB   16/25 KB   10/10 KB   13/337 KB   16/991 KB   16/25 KB   10/10 KB   13/337 KB   16/991 KB   19/25 KB   10/10 KB   16/337 KB   16/991 KB   19/25 KB   10/10 KB   16/337 KB   19/991 KB   19/25 KB   10/10 KB   16/337 KB   19/991 KB   21/25 KB   10/10 KB   19/337 KB   19/991 KB   21/25 KB   10/10 KB   19/337 KB   21/991 KB   21/25 KB   10/10 KB   21/337 KB   21/991 KB   21/25 KB   10/10 KB   21/337 KB   21/991 KB   24/25 KB                                                 Downloaded: https://repo.maven.apache.org/maven2/org/antlr/antlr4-annotations/4.3/antlr4-annotations-4.3.jar (10 KB at 27.8 KB/sec)
+21/337 KB   21/991 KB   25/25 KB              21/337 KB   24/991 KB   25/25 KB   24/337 KB   24/991 KB   25/25 KB   27/337 KB   24/991 KB   25/25 KB   27/337 KB   27/991 KB   25/25 KB   27/337 KB   29/991 KB   25/25 KB   29/337 KB   29/991 KB   25/25 KB   29/337 KB   32/991 KB   25/25 KB   32/337 KB   32/991 KB   25/25 KB   32/337 KB   36/991 KB   25/25 KB   36/337 KB   36/991 KB   25/25 KB   36/337 KB   40/991 KB   25/25 KB                                      Downloaded: https://repo.maven.apache.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.jar (25 KB at 48.2 KB/sec)
+36/337 KB   44/991 KB              40/337 KB   44/991 KB   40/337 KB   48/991 KB   44/337 KB   48/991 KB   44/337 KB   52/991 KB   48/337 KB   52/991 KB   48/337 KB   56/991 KB   52/337 KB   56/991 KB   52/337 KB   60/991 KB   56/337 KB   60/991 KB   56/337 KB   64/991 KB   60/337 KB   64/991 KB   60/337 KB   68/991 KB   64/337 KB   68/991 KB   68/337 KB   68/991 KB   68/337 KB   72/991 KB   72/337 KB   72/991 KB   72/337 KB   76/991 KB   76/337 KB   76/991 KB   76/337 KB   80/991 KB   80/337 KB   80/991 KB   80/337 KB   84/991 KB   84/337 KB   84/991 KB   84/337 KB   88/991 KB   88/337 KB   88/991 KB   88/337 KB   92/991 KB   92/337 KB   92/991 KB   92/337 KB   96/991 KB   96/337 KB   96/991 KB   96/337 KB   100/991 KB   100/337 KB   100/991 KB   100/337 KB   104/991 KB   104/337 KB   104/991 KB   104/337 KB   108/991 KB   108/337 KB   108/991 KB   108/337 KB   112/991 KB   112/337 KB   112/991 KB   112/337 KB   116/991 KB   116/337 KB   116/991 KB   116/337 KB   120/991 KB   120/337 KB   120/991 KB   120/337 KB   124/991 KB   124/337 KB   124/991 KB   124/337 KB   128/991 KB   128/337 KB   128/991 KB   128/337 KB   132/991 KB   132/337 KB   132/991 KB   132/337 KB   136/991 KB   136/337 KB   136/991 KB   136/337 KB   140/991 KB   140/337 KB   140/991 KB   140/337 KB   144/991 KB   144/337 KB   144/991 KB   144/337 KB   148/991 KB   148/337 KB   148/991 KB   148/337 KB   152/991 KB   152/337 KB   152/991 KB   152/337 KB   156/991 KB   156/337 KB   156/991 KB   156/337 KB   160/991 KB   160/337 KB   160/991 KB   160/337 KB   164/991 KB   164/337 KB   164/991 KB   164/337 KB   168/991 KB   168/337 KB   168/991 KB   168/337 KB   172/991 KB   172/337 KB   172/991 KB   172/337 KB   176/991 KB   176/337 KB   176/991 KB   176/337 KB   180/991 KB   180/337 KB   180/991 KB   180/337 KB   184/991 KB   184/337 KB   184/991 KB   184/337 KB   188/991 KB   188/337 KB   188/991 KB   188/337 KB   192/991 KB   192/337 KB   192/991 KB   192/337 KB   196/991 KB   196/337 KB   196/991 KB   196/337 KB   200/991 KB   200/337 KB   200/991 KB   200/337 KB   204/991 KB   204/337 KB   204/991 KB   204/337 KB   208/991 KB   208/337 KB   208/991 KB   208/337 KB   212/991 KB   212/337 KB   212/991 KB   212/337 KB   216/991 KB   216/337 KB   216/991 KB   216/337 KB   220/991 KB   220/337 KB   220/991 KB   220/337 KB   224/991 KB   224/337 KB   224/991 KB   224/337 KB   228/991 KB   228/337 KB   228/991 KB   228/337 KB   232/991 KB   232/337 KB   232/991 KB   232/337 KB   236/991 KB   236/337 KB   236/991 KB   236/337 KB   240/991 KB   240/337 KB   240/991 KB   240/337 KB   244/991 KB   244/337 KB   244/991 KB   244/337 KB   248/991 KB   248/337 KB   248/991 KB   248/337 KB   252/991 KB   252/337 KB   252/991 KB   252/337 KB   256/991 KB   256/337 KB   256/991 KB   256/337 KB   260/991 KB   260/337 KB   260/991 KB   260/337 KB   264/991 KB   264/337 KB   264/991 KB   264/337 KB   268/991 KB   268/337 KB   268/991 KB   268/337 KB   272/991 KB   272/337 KB   272/991 KB   272/337 KB   276/991 KB   276/337 KB   276/991 KB   276/337 KB   280/991 KB   280/337 KB   280/991 KB   280/337 KB   284/991 KB   284/337 KB   284/991 KB   284/337 KB   288/991 KB   288/337 KB   288/991 KB   288/337 KB   292/991 KB   292/337 KB   292/991 KB   292/337 KB   296/991 KB   296/337 KB   296/991 KB   296/337 KB   300/991 KB   300/337 KB   300/991 KB   300/337 KB   304/991 KB   304/337 KB   304/991 KB   304/337 KB   308/991 KB   308/337 KB   308/991 KB   308/337 KB   312/991 KB   312/337 KB   312/991 KB   312/337 KB   316/991 KB   316/337 KB   316/991 KB   316/337 KB   320/991 KB   320/337 KB   320/991 KB   320/337 KB   324/991 KB   324/337 KB   324/991 KB   324/337 KB   328/991 KB   328/337 KB   328/991 KB   328/337 KB   332/991 KB   332/337 KB   332/991 KB   332/337 KB   336/991 KB   336/337 KB   336/991 KB   336/337 KB   340/991 KB   336/337 KB   344/991 KB   337/337 KB   344/991 KB   337/337 KB   348/991 KB   337/337 KB   352/991 KB   337/337 KB   356/991 KB   337/337 KB   360/991 KB                             Downloaded: https://repo.maven.apache.org/maven2/org/antlr/antlr4-runtime/4.3/antlr4-runtime-4.3.jar (337 KB at 119.6 KB/sec)
+364/991 KB                368/991 KB   372/991 KB   376/991 KB   380/991 KB   384/991 KB   388/991 KB   392/991 KB   396/991 KB   400/991 KB   404/991 KB   408/991 KB   412/991 KB   416/991 KB   420/991 KB   424/991 KB   428/991 KB   432/991 KB   436/991 KB   440/991 KB   444/991 KB   448/991 KB   452/991 KB   456/991 KB   460/991 KB   464/991 KB   468/991 KB   472/991 KB   476/991 KB   480/991 KB   484/991 KB   488/991 KB   492/991 KB   496/991 KB   500/991 KB   504/991 KB   508/991 KB   512/991 KB   516/991 KB   520/991 KB   524/991 KB   528/991 KB   532/991 KB   536/991 KB   540/991 KB   544/991 KB   548/991 KB   552/991 KB   556/991 KB   560/991 KB   564/991 KB   568/991 KB   572/991 KB   576/991 KB   580/991 KB   584/991 KB   588/991 KB   592/991 KB   596/991 KB   600/991 KB   604/991 KB   608/991 KB   612/991 KB   616/991 KB   620/991 KB   624/991 KB   628/991 KB   632/991 KB   636/991 KB   640/991 KB   644/991 KB   648/991 KB   652/991 KB   656/991 KB   660/991 KB   664/991 KB   668/991 KB   672/991 KB   676/991 KB   680/991 KB   684/991 KB   688/991 KB   692/991 KB   696/991 KB   700/991 KB   704/991 KB   708/991 KB   712/991 KB   716/991 KB   720/991 KB   724/991 KB   728/991 KB   732/991 KB   736/991 KB   740/991 KB   744/991 KB   748/991 KB   752/991 KB   755/991 KB   757/991 KB   760/991 KB   763/991 KB   765/991 KB   768/991 KB   771/991 KB   773/991 KB   776/991 KB   779/991 KB   781/991 KB   784/991 KB   788/991 KB   792/991 KB   796/991 KB   800/991 KB   804/991 KB   808/991 KB   812/991 KB   816/991 KB   820/991 KB   824/991 KB   828/991 KB   832/991 KB   836/991 KB   840/991 KB   844/991 KB   848/991 KB   852/991 KB   856/991 KB   860/991 KB   864/991 KB   868/991 KB   872/991 KB   876/991 KB   880/991 KB   884/991 KB   888/991 KB   892/991 KB   896/991 KB   900/991 KB   904/991 KB   908/991 KB   912/991 KB   916/991 KB   920/991 KB   924/991 KB   928/991 KB   932/991 KB   936/991 KB   940/991 KB   944/991 KB   948/991 KB   952/991 KB   956/991 KB   960/991 KB   964/991 KB   968/991 KB   972/991 KB   976/991 KB   980/991 KB   984/991 KB   988/991 KB   991/991 KB                Downloaded: https://repo.maven.apache.org/maven2/com/puppycrawl/tools/checkstyle/6.1.1/checkstyle-6.1.1.jar (991 KB at 132.7 KB/sec)
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-project ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-project/1.5.3-SNAPSHOT/accumulo-project-1.5.3-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/target/accumulo-project-1.5.3-SNAPSHOT-site.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-project/1.5.3-SNAPSHOT/accumulo-project-1.5.3-SNAPSHOT-site.xml
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Trace 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-trace ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-trace ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-trace ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-trace ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-trace ---
+[INFO] Compiling 22 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-trace ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-trace ---
+[INFO] Compiling 3 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-trace ---
+[INFO] Copying libthrift-0.9.0.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/libthrift.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-trace ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/target/accumulo-trace-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-trace ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-trace ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/target/accumulo-trace-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-trace/1.5.3-SNAPSHOT/accumulo-trace-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-trace/1.5.3-SNAPSHOT/accumulo-trace-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fate 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-fate ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-fate ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-fate ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-fate ---
+[INFO] Compiling 26 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-fate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-fate ---
+[INFO] Compiling 7 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-fate ---
+[INFO] Copying guava-14.0.1.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/guava.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-fate ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/accumulo-fate-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-fate ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-fate ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/accumulo-fate-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.3-SNAPSHOT/accumulo-fate-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.3-SNAPSHOT/accumulo-fate-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Start 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-start ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-start ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-start ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-start ---
+[INFO] Compiling 18 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-start ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Compiling 7 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-start ---
+[INFO] Copying commons-vfs2-2.0.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-vfs2.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-start ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/target/accumulo-start-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-start ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-start ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/target/accumulo-start-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-start/1.5.3-SNAPSHOT/accumulo-start-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-start/1.5.3-SNAPSHOT/accumulo-start-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-core ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-core ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-core ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:copy-resources (prepare-filtered-java-source) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:add-source (add-filtered-java-source) @ accumulo-core ---
+[INFO] Source directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/filtered-java-src added.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-core ---
+[INFO] Compiling 490 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/src/main/java/org/apache/accumulo/core/iterators/aggregation/conf/AggregatorConfiguration.java:[19,46] [deprecation] PerColumnIteratorConfig in org.apache.accumulo.core.iterators.conf has been deprecated
+[WARNING] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/src/main/java/org/apache/accumulo/core/iterators/aggregation/conf/AggregatorSet.java:[22,53] [deprecation] Aggregator in org.apache.accumulo.core.iterators.aggregation has been deprecated
+[WARNING] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/src/main/java/org/apache/accumulo/core/iterators/AggregatingIterator.java:[30,53] [deprecation] Aggregator in org.apache.accumulo.core.iterators.aggregation has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-core ---
+[INFO] Compiling 92 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/src/test/java/org/apache/accumulo/core/iterators/aggregation/conf/AggregatorConfigurationTest.java:[21,46] [deprecation] PerColumnIteratorConfig in org.apache.accumulo.core.iterators.conf has been deprecated
+[WARNING] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/src/test/java/org/apache/accumulo/core/iterators/AggregatingIteratorTest.java:[34,53] [deprecation] Aggregator in org.apache.accumulo.core.iterators.aggregation has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-core ---
+[INFO] Copying commons-math-2.1.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-math.jar
+[INFO] Copying jcommander-1.30.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/jcommander.jar
+[INFO] Copying jline-1.0.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/jline.jar
+[INFO] Copying accumulo-fate-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate.jar
+[INFO] Copying accumulo-trace-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace.jar
+[INFO] Copying accumulo-start-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start.jar
+[INFO] commons-vfs2-2.0.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] guava-14.0.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-core ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/accumulo-core-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-core ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-core ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/accumulo-core-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-core/1.5.3-SNAPSHOT/accumulo-core-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-core/1.5.3-SNAPSHOT/accumulo-core-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Server 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-server ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-server ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-server ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-server ---
+[INFO] Compiling 251 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[233,23] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[237,56] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[237,66] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[237,74] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[237,85] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[238,39] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[238,74] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[238,85] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[239,39] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[239,46] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[239,85] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[240,39] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[240,46] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[240,85] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[241,39] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[241,46] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[242,39] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[242,46] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[242,56] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[242,74] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[243,39] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[243,46] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[243,56] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[243,66] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[243,74] '_' used as an identifier
+[WARNING]   (use of '_' as an identifier might not be supported in releases after Java SE 8)
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/src/main/java/org/apache/accumulo/server/master/Master.java:[243,85] '_' used as an identifier
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-server ---
+[INFO] Compiling 27 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-server ---
+[INFO] Copying gson-2.2.2.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/gson.jar
+[INFO] Copying jetty-6.1.26.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/jetty.jar
+[INFO] Copying accumulo-core-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core.jar
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] jline-1.0.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] accumulo-fate-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-trace-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] guava-14.0.1.jar already exists in destination.
+[INFO] accumulo-start-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-server ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/accumulo-server-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-server ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-server ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/accumulo-server-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-server/1.5.3-SNAPSHOT/accumulo-server-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-server/1.5.3-SNAPSHOT/accumulo-server-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Examples 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-examples ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-examples ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-examples ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-examples ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-examples ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-examples ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-examples ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples/1.5.3-SNAPSHOT/accumulo-examples-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Simple Examples 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-examples-simple ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-examples-simple ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-examples-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-examples-simple ---
+[INFO] Compiling 42 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-examples-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-examples-simple ---
+[INFO] Compiling 5 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-examples-simple ---
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] accumulo-core-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-examples-simple ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/target/accumulo-examples-simple-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-examples-simple ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/target/accumulo-examples-simple-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.5.3-SNAPSHOT/accumulo-examples-simple-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.5.3-SNAPSHOT/accumulo-examples-simple-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MiniCluster 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-minicluster ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-minicluster ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-minicluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-minicluster ---
+[INFO] Compiling 2 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-minicluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-minicluster ---
+[INFO] Compiling 4 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-minicluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-minicluster ---
+[INFO] Copying accumulo-server-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server.jar
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] guava-14.0.1.jar already exists in destination.
+[INFO] accumulo-core-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-start-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-minicluster ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/target/accumulo-minicluster-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-minicluster ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-minicluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-minicluster ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-minicluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-minicluster ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/target/accumulo-minicluster-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.5.3-SNAPSHOT/accumulo-minicluster-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/minicluster/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-minicluster/1.5.3-SNAPSHOT/accumulo-minicluster-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Testing 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-test ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-test ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-test ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-test ---
+[INFO] Compiling 193 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-test ---
+[INFO] Compiling 13 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-test ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-test ---
+[INFO] Copying accumulo-minicluster-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-minicluster.jar
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] jline-1.0.jar already exists in destination.
+[INFO] accumulo-server-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] accumulo-fate-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-trace-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-core-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-start-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-test ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/target/accumulo-test-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-test ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-test ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-test ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-test ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/target/accumulo-test-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-test/1.5.3-SNAPSHOT/accumulo-test-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-test/1.5.3-SNAPSHOT/accumulo-test-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Proxy 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-proxy ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-proxy ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-proxy ---
+[INFO] Compiling 37 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-proxy ---
+[INFO] Compiling 5 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo-proxy ---
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] accumulo-server-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] guava-14.0.1.jar already exists in destination.
+[INFO] accumulo-core-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-minicluster-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-proxy ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/accumulo-proxy-1.5.3-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo-proxy ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-proxy ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/accumulo-proxy-1.5.3-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-proxy/1.5.3-SNAPSHOT/accumulo-proxy-1.5.3-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-proxy/1.5.3-SNAPSHOT/accumulo-proxy-1.5.3-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Assemblies 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ accumulo ---
+[INFO] Copying accumulo-examples-simple-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple.jar
+[INFO] Copying accumulo-proxy-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy.jar
+[INFO] Copying accumulo-test-1.5.3-SNAPSHOT.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test.jar
+[INFO] accumulo-server-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-fate-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-trace-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-core-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-minicluster-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] accumulo-start-1.5.3-SNAPSHOT.jar already exists in destination.
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (config-webpage) > validate @ accumulo >>>
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo ---
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (config-webpage) < validate @ accumulo <<<
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (config-webpage) @ accumulo ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:attach-descriptor (attach-descriptor) @ accumulo ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:integration-test (run-integration-tests) @ accumulo ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (check-style) @ accumulo ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.12.4:verify (verify-integration-tests) @ accumulo ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo/1.5.3-SNAPSHOT/accumulo-1.5.3-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Accumulo Project ............................ SUCCESS [ 17.287 s]
+[INFO] Trace .............................................. SUCCESS [  4.357 s]
+[INFO] Fate ............................................... SUCCESS [  2.488 s]
+[INFO] Start .............................................. SUCCESS [  3.430 s]
+[INFO] Core ............................................... SUCCESS [ 43.152 s]
+[INFO] Server ............................................. SUCCESS [  8.923 s]
+[INFO] Examples ........................................... SUCCESS [  0.376 s]
+[INFO] Simple Examples .................................... SUCCESS [  3.415 s]
+[INFO] MiniCluster ........................................ SUCCESS [  1.558 s]
+[INFO] Testing ............................................ SUCCESS [  3.873 s]
+[INFO] Proxy .............................................. SUCCESS [  6.354 s]
+[INFO] Assemblies ......................................... SUCCESS [  1.346 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:37 min
+[INFO] Finished at: 2018-08-01T10:28:54+02:00
+[INFO] Final Memory: 96M/1578M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-3475_7651b777 && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
+cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
+patching file proxy/src/main/java/org/apache/accumulo/proxy/ProxyServer.java
+cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Proxy 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-proxy ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ accumulo-proxy ---
+[INFO] Major version changes allowed
+[INFO] 
+[INFO] --- diff-test-selection:0.2:list (default-cli) @ accumulo-proxy ---
+[INFO] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Proxy 1.5.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-proxy ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ accumulo-proxy ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 37 files (2 packages).
+[INFO] Elapsed time = 10.399 secs. (3.558 files/sec, 10,116.261 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 5 files (1 package).
+[INFO] 34 test methods detected.
+[INFO] Elapsed time = 0.217 secs. (23.041 files/sec, 10,013.825 srclines/sec)
+[INFO] 
+[INFO] --- maven-sortpom-plugin:2.1.0:verify (verify-sorted-pom) @ accumulo-proxy ---
+[INFO] Verifying file /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/pom.xml
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-proxy ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- mavanagaiata:0.7.0:commit (git-commit) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.4:process (default) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/src/main/resources
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ accumulo-proxy ---
+[INFO] Compiling 37 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ accumulo-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ accumulo-proxy ---
+[INFO] Compiling 5 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ accumulo-proxy ---
+[INFO] Surefire report directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.accumulo.proxy.TestProxyTableOperations
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.844 sec
+Running org.apache.accumulo.proxy.TestProxyInstanceOperations
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Running org.apache.accumulo.proxy.TestProxySecurityOperations
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 sec
+Running org.apache.accumulo.proxy.TestProxyReadWrite
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.959 sec
+Running org.apache.accumulo.proxy.SimpleTest
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.489 sec <<< FAILURE!
+testDelete(org.apache.accumulo.proxy.SimpleTest)  Time elapsed: 0.445 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.apache.accumulo.proxy.SimpleTest.__CLR4_2_0yilj0c1n24(SimpleTest.java:711)
+	at org.apache.accumulo.proxy.SimpleTest.testDelete(SimpleTest.java:691)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+
+Results :
+
+Failed tests:   testDelete(org.apache.accumulo.proxy.SimpleTest): expected:<1> but was:<0>
+
+Tests run: 34, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:23 min
+[INFO] Finished at: 2018-08-01T10:30:24+02:00
+[INFO] Final Memory: 44M/990M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project accumulo-proxy: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Writing HTML report to '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/clover/report'
+Done. Processed 2 packages in 20805ms (10402ms per package).
+[INFO] org.apache.accumulo.proxy.SimpleTest;testTableOperations;testDelete;testBatchWriter;testUnknownWriter;testInstanceOperations
+org.apache.accumulo.proxy.TestProxyReadWrite;readWriteOneShotWithRange;testVisibility;readWriteBatchOneShotWithColumnFamilyOnly;readWriteBatchOneShotWithFullColumn;readWriteBatchOneShotWithRange;readWriteBatchOneShotWithFilterIterator;asynchReadWrite;readWriteOneShotWithFilterIterator
+org.apache.accumulo.proxy.TestProxyTableOperations;tableOperationsRowMethods
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:53 min
+[INFO] Finished at: 2018-08-01T10:30:49+02:00
+[INFO] Final Memory: 40M/1189M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy && ~/apache-maven-3.3.9/bin/mvn clean versions:use-latest-versions -Dincludes=junit:junit eu.stamp-project:diff-test-selection:0.2:list -DpathToDiff=../.bugs-dot-jar/developer-patch.diff -DpathToOtherVersion=../../accumulo_fixed/ -DoutputPath=../../../accumulo/data_test-selection_bugs-dot-jar_ACCUMULO-3475_7651b777.csv -Dreport=CSV
+rm -rf accumulo_fixed

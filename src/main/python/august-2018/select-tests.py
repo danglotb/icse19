@@ -6,7 +6,7 @@ def run(project, lower_bound=1, upper_bound=-1):
     result = toolbox.get_all_branches_of_bugs(project)
     print lower_bound, upper_bound
     for res in result[lower_bound:upper_bound]:
-        run_one(project, res)
+        run_one(project, "".join(res.split(" ")))
 
 def run_one(project, branch):
     # getting the concerned module

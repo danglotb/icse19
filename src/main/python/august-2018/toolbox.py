@@ -12,6 +12,7 @@ suffix_project_fixed = "_fixed"
 relative_test_path = ".bugs-dot-jar/test-results.txt"
 relative_patch_path = ".bugs-dot-jar/developer-patch.diff"
 maven_home = ""
+java_home = ""
 current_output_log = ""
 single_module_projects = ["commons-math"]
 
@@ -88,10 +89,14 @@ def initialize_project_for_branch_with_build(project, branch):
         " ".join(["cd", prefix_bug_dot_jar + project + suffix_project_fixed, "&&", "patch", "-p1", "<", relative_patch_path]))
 
 
+
+
 def init(argv):
     global maven_home
+    global java_home
     if "onClusty" in argv:
         maven_home = "~/apache-maven-3.3.9/bin/"
+        java_home = "~/jdk1.8.0_121/bin/"
     else:
         maven_home = ""
 

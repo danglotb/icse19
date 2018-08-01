@@ -1,0 +1,10 @@
+org.apache.accumulo.core.client.mapreduce.AccumuloFileOutputFormatTest;writeBadVisibility;testEmptyWrite;testRealWrite
+org.apache.accumulo.core.client.mapred.AccumuloOutputFormatTest;testMR
+org.apache.accumulo.core.client.mapreduce.AccumuloInputFormatTest;testPartialInputSplitDelegationToConfiguration;testPartialFailedInputSplitDelegationToConfiguration;testMap
+org.apache.accumulo.core.client.mapreduce.RangeInputSplitTest;testSimpleWritable;testAllFieldsWritable
+org.apache.accumulo.core.client.mapred.AccumuloInputFormatTest;testMap
+org.apache.accumulo.core.client.mapred.AccumuloFileOutputFormatTest;writeBadVisibility;testEmptyWrite;testRealWrite
+org.apache.accumulo.core.client.mapreduce.AccumuloOutputFormatTest;testMR
+org.apache.accumulo.core.client.mapreduce.AccumuloRowInputFormatTest;test
+org.apache.accumulo.core.client.mapred.AccumuloRowInputFormatTest;test
+org.apache.accumulo.core.client.mapred.RangeInputSplitTest;testSimpleWritable;testAllFieldsWritable

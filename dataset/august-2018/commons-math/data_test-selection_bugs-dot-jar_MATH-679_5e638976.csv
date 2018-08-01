@@ -1,0 +1,4 @@
+org.apache.commons.math.linear.SparseRealMatrixTest;testEqualsAndHashCode;testGetRowMatrix;testSerial;testOperate;testSubMatrix;testCopyFunctions;testNorm;testPremultiplyVector;testAdd;testMultiply;testGetEntry;testMultiply2;testDimensions;testTrace;testSetSubMatrix;testGetColumnVector;testExamples;testTranspose;testGetVectors;testAddFail;testScalarAdd;testToString;testGetColumnMatrix;testMath209;testPremultiply;testGetRowVector;testPlusMinus
+org.apache.commons.math.linear.UnmodifiableOpenMapRealVectorTest;testAllButExcluded
+org.apache.commons.math.linear.SparseRealVectorTest;testOuterProduct;testBasicFunctions
+org.apache.commons.math.linear.OpenMapRealMatrixTest;testMath679

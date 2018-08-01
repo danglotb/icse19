@@ -24,7 +24,7 @@ def run_one(project, branch):
              toolbox.maven_home + "mvn", "clean",
              "versions:use-latest-versions",
              "-Dincludes=junit:junit",
-             "eu.stamp-project:diff-test-selection:0.2:list",
+             "eu.stamp-project:diff-test-selection:list",
              "-DpathToDiff=" + ("../" if not targetModule == "" else "") + toolbox.relative_patch_path,
              "-DpathToOtherVersion=../" + (
              "../" if not targetModule == "" else "") + project + toolbox.suffix_project_fixed + "/",

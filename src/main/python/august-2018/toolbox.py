@@ -2,7 +2,7 @@ import subprocess
 import csv
 import subprocess
 
-absolute_path_dspot = "/home/bdanglot/workspace/dspot/dspot/target/dspot-1.1.1-SNAPSHOT-jar-with-dependencies.jar"
+absolute_path_dspot = "/tmp/dspot/dspot/target/dspot-1.1.1-SNAPSHOT-jar-with-dependencies.jar"
 prefix_dataset = "dataset/august-2018/"
 prefix_bug_dot_jar = prefix_dataset + "bugs-dot-jar/"
 suffix_properties = ".properties"
@@ -22,7 +22,9 @@ def readTestToBeExecuted(project, branch):
     with open(path_to_csv_file, 'rb') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=';')
         for row in spamreader:
-            tests_to_be_amplified[row[0]] = row[1:]
+            print row[1:]
+            print list(set(row[1:]))
+            tests_to_be_amplified[row[0]] = list(set(row[1:]))
     return tests_to_be_amplified
 
 

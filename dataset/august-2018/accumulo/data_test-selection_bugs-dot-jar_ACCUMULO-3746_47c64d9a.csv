@@ -1,0 +1,1 @@
+org.apache.accumulo.core.data.MutationTest;testPutAfterHashCode;testThrift;testThrift_Invalid;testPutAfterEquals;testEquals

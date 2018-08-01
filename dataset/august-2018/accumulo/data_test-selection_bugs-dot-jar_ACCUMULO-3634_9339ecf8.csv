@@ -1,0 +1,2 @@
+org.apache.accumulo.core.util.shell.command.FormatterCommandTest;test;test
+org.apache.accumulo.core.util.shell.ShellTest;execFileTest

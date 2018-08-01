@@ -1,0 +1,2 @@
+org.apache.commons.math.complex.ComplexTest;testDivideReal;testAtanI;testDivideZero;testDivide;testScalarDivide;testAtanInf;testDivideNaNInf;testScalarDivideInf;testScalarDivideZero;testDivideInf;testAtan;testDivideZeroZero;testDivideImaginary
+org.apache.commons.math.analysis.solvers.LaguerreSolverTest;testQuadraticFunction;testQuinticFunction

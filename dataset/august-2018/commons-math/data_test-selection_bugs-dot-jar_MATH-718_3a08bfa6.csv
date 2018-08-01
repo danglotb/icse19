@@ -1,0 +1,10 @@
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest;testEvents;testEventsNoConvergence
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest;testDecreasingSteps
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest;testDecreasingSteps;testUnstableDerivative
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest;testEvents
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest;testDecreasingSteps;testMissedEndEvent
+org.apache.commons.math.ode.events.EventStateTest;testIssue695
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest;testSolutionRightSide;testSinZero;testSolutionBelowSide;testFasterThanNewton;testSolutionLeftSide;testIssue716;testConvergenceOnFunctionAccuracy;testSolutionAboveSide;testQuinticZero
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest;testMissedEndEvent;testEvents;testUnstableDerivative
+org.apache.commons.math.ode.nonstiff.EulerIntegratorTest;testDecreasingSteps
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest;testDecreasingSteps

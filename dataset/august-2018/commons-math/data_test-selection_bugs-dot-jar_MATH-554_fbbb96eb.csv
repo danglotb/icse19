@@ -1,2 +1,0 @@
-org.apache.commons.math.geometry.Vector3DTest;testDistance1;testDistance;testDistanceSq;testVectorialProducts;testCrossProductCancellation;testAngle
-org.apache.commons.math.geometry.RotationTest;testVectorTwoPairs

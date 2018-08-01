@@ -1,2 +1,0 @@
-org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest;testOneSet;testTrivial;testRedundantEquations;testNoDependency
-org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest;testSolveBadParameters

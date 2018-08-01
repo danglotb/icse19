@@ -1,0 +1,5 @@
+org.apache.commons.math.complex.ComplexTest;testAddInfinite;testAcos;testAsin;testAsinInf;testAddNaN;testAdd;testAtanNaN;testAtanInf;testAcosInf;testAtan
+org.apache.commons.math.analysis.solvers.LaguerreSolverTest;testLinearFunction;testQuadraticFunction;testQuinticFunction
+org.apache.commons.math.transform.FastFourierTransformerTest;testSinFunction;test2DData;testAdHocData
+org.apache.commons.math.transform.FastCosineTransformerTest;testSinFunction;testAdHocData
+org.apache.commons.math.transform.FastSineTransformerTest;testSinFunction;testAdHocData

@@ -1,1 +1,0 @@
-org.apache.commons.math3.optimization.direct.CMAESOptimizerTest;testSphere;testTablet;testCigTab;testConstrainedRosen;testMaximize;testInputSigmaDimensionMismatch;testSsDiffPow;testCigar;testInputSigmaNegative;testRosen;testDiffPow;testTwoAxes;testElliRotated;testInputSigmaOutOfRange;testEllipse;testAckley;testDiagonalRosen;testRastrigin

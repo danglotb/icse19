@@ -1,177 +1,0 @@
-rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
-cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
-Previous HEAD position was d37cf4c... Added bug report.
-HEAD is now at 706e394... Added bug report.
-[INFO] Scanning for projects...
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Build Order:
-[INFO] 
-[INFO] Apache Accumulo Project
-[INFO] Apache Accumulo Trace
-[INFO] Apache Accumulo Fate
-[INFO] Apache Accumulo Start
-[INFO] Apache Accumulo Core
-[INFO] Apache Accumulo Simple Examples
-[INFO] Apache Accumulo Server Base
-[INFO] Apache Accumulo GC Server
-[INFO] Apache Accumulo Master Server
-[INFO] Apache Accumulo Monitor Server
-[INFO] Apache Accumulo Tracer Server
-[INFO] Apache Accumulo Tablet Server
-[INFO] Apache Accumulo MiniCluster
-[INFO] Apache Accumulo Native Libraries
-[INFO] Apache Accumulo Testing
-[INFO] Apache Accumulo Proxy
-[INFO] Apache Accumulo
-[INFO] Apache Accumulo Documentation
-[INFO] Apache Accumulo Maven Plugin
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Apache Accumulo Project 1.6.6-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-Downloading: https://repo.maven.apache.org/maven2/org/gaul/modernizer-maven-plugin/1.4.0/modernizer-maven-plugin-1.4.0.pom
-2/11 KB   5/11 KB   6/11 KB   9/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/org/gaul/modernizer-maven-plugin/1.4.0/modernizer-maven-plugin-1.4.0.pom (11 KB at 15.9 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/gaul/modernizer-maven-plugin/1.4.0/modernizer-maven-plugin-1.4.0.jar
-3/31 KB    5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/gaul/modernizer-maven-plugin/1.4.0/modernizer-maven-plugin-1.4.0.jar (31 KB at 57.5 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.pom
-3/14 KB    5/14 KB   8/14 KB   11/14 KB   13/14 KB   14/14 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.pom (14 KB at 51.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.jar
-3/109 KB   5/109 KB   8/109 KB   11/109 KB   13/109 KB   16/109 KB   19/109 KB   21/109 KB   24/109 KB   27/109 KB   29/109 KB   32/109 KB   36/109 KB   40/109 KB   44/109 KB   48/109 KB   52/109 KB   56/109 KB   60/109 KB   64/109 KB   68/109 KB   72/109 KB   76/109 KB   80/109 KB   84/109 KB   88/109 KB   92/109 KB   96/109 KB   100/109 KB   104/109 KB   108/109 KB   109/109 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-checkstyle-plugin/2.15/maven-checkstyle-plugin-2.15.jar (109 KB at 117.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.pom
-4/22 KB      8/22 KB   12/22 KB   16/22 KB   20/22 KB   22/22 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.pom (22 KB at 72.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.jar
-4/142 KB   8/142 KB   12/142 KB   16/142 KB   20/142 KB   24/142 KB   28/142 KB   32/142 KB   36/142 KB   40/142 KB   44/142 KB   48/142 KB   52/142 KB   56/142 KB   60/142 KB   64/142 KB   68/142 KB   71/142 KB   75/142 KB   79/142 KB   83/142 KB   87/142 KB   91/142 KB   95/142 KB   99/142 KB   103/142 KB   107/142 KB   111/142 KB   115/142 KB   119/142 KB   123/142 KB   127/142 KB   131/142 KB   135/142 KB   139/142 KB   142/142 KB                Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.3/findbugs-maven-plugin-3.0.3.jar (142 KB at 131.1 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/googlecode/maven-java-formatter-plugin/maven-java-formatter-plugin/0.4/maven-java-formatter-plugin-0.4.pom
-3/9 KB       3/9 KB   6/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/maven-java-formatter-plugin/maven-java-formatter-plugin/0.4/maven-java-formatter-plugin-0.4.pom (9 KB at 31.2 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/googlecode/maven-java-formatter-plugin/maven-java-formatter-plugin/0.4/maven-java-formatter-plugin-0.4.jar
-3/19 KB   5/19 KB   8/19 KB   11/19 KB   13/19 KB   16/19 KB   19/19 KB   19/19 KB              Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/maven-java-formatter-plugin/maven-java-formatter-plugin/0.4/maven-java-formatter-plugin-0.4.jar (19 KB at 69.6 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/github/ekryd/sortpom/sortpom-maven-plugin/2.4.0/sortpom-maven-plugin-2.4.0.pom
-2/2 KB              Downloaded: https://repo.maven.apache.org/maven2/com/github/ekryd/sortpom/sortpom-maven-plugin/2.4.0/sortpom-maven-plugin-2.4.0.pom (2 KB at 8.3 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/github/ekryd/sortpom/sortpom-parent/2.4.0/sortpom-parent-2.4.0.pom
-3/11 KB   5/11 KB   8/11 KB   11/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/com/github/ekryd/sortpom/sortpom-parent/2.4.0/sortpom-parent-2.4.0.pom (11 KB at 35.8 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/com/github/ekryd/sortpom/sortpom-maven-plugin/2.4.0/sortpom-maven-plugin-2.4.0.jar
-3/11 KB    5/11 KB   8/11 KB   11/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/com/github/ekryd/sortpom/sortpom-maven-plugin/2.4.0/sortpom-maven-plugin-2.4.0.jar (11 KB at 33.2 KB/sec)
-[INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-project ---
-[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy (includes = [**/*.pyc, **/*.so], excludes = [])
-[INFO] 
-[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-project ---
-[INFO] 
-[INFO] --- mavanagaiata:0.7.1:commit (git-commit) @ accumulo-project ---
-[INFO] 
-[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-project ---
-[INFO] 69 implicit excludes (use -debug for more details).
-[INFO] Exclude: nbproject/**
-[INFO] Exclude: nb-configuration.xml
-[INFO] Exclude: nbactions.xml
-[INFO] 14 resources included (use -debug for more details)
-[INFO] Rat check: Summary of files. Unapproved: 4 unknown: 4 generated: 0 approved: 7 licence.
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary:
-[INFO] 
-[INFO] Apache Accumulo Project ............................ FAILURE [  9.020 s]
-[INFO] Apache Accumulo Trace .............................. SKIPPED
-[INFO] Apache Accumulo Fate ............................... SKIPPED
-[INFO] Apache Accumulo Start .............................. SKIPPED
-[INFO] Apache Accumulo Core ............................... SKIPPED
-[INFO] Apache Accumulo Simple Examples .................... SKIPPED
-[INFO] Apache Accumulo Server Base ........................ SKIPPED
-[INFO] Apache Accumulo GC Server .......................... SKIPPED
-[INFO] Apache Accumulo Master Server ...................... SKIPPED
-[INFO] Apache Accumulo Monitor Server ..................... SKIPPED
-[INFO] Apache Accumulo Tracer Server ...................... SKIPPED
-[INFO] Apache Accumulo Tablet Server ...................... SKIPPED
-[INFO] Apache Accumulo MiniCluster ........................ SKIPPED
-[INFO] Apache Accumulo Native Libraries ................... SKIPPED
-[INFO] Apache Accumulo Testing ............................ SKIPPED
-[INFO] Apache Accumulo Proxy .............................. SKIPPED
-[INFO] Apache Accumulo .................................... SKIPPED
-[INFO] Apache Accumulo Documentation ...................... SKIPPED
-[INFO] Apache Accumulo Maven Plugin ....................... SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.894 s
-[INFO] Finished at: 2018-08-01T11:00:01+02:00
-[INFO] Final Memory: 27M/316M
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:0.11:check (check-licenses) on project accumulo-project: Too many files with unapproved license: 4 See RAT report in: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/target/rat.txt -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-4138_50db442b && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
-rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
-cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
-patching file core/src/main/java/org/apache/accumulo/core/util/shell/commands/OptUtil.java
-cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Apache Accumulo Core 1.6.6-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-core ---
-[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core (includes = [**/*.pyc, **/*.so], excludes = [])
-[INFO] 
-[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ accumulo-core ---
-[INFO] Major version changes allowed
-[INFO] 
-[INFO] --- diff-test-selection:0.2:list (default-cli) @ accumulo-core ---
-[INFO] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core
-[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Apache Accumulo Core 1.6.6-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-fate/1.6.6-SNAPSHOT/maven-metadata.xml
-
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-fate/1.6.6-SNAPSHOT/accumulo-fate-1.6.6-SNAPSHOT.pom
-
-[WARNING] The POM for org.apache.accumulo:accumulo-fate:jar:1.6.6-SNAPSHOT is missing, no dependency information available
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-start/1.6.6-SNAPSHOT/maven-metadata.xml
-
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-start/1.6.6-SNAPSHOT/accumulo-start-1.6.6-SNAPSHOT.pom
-
-[WARNING] The POM for org.apache.accumulo:accumulo-start:jar:1.6.6-SNAPSHOT is missing, no dependency information available
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-trace/1.6.6-SNAPSHOT/maven-metadata.xml
-
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-trace/1.6.6-SNAPSHOT/accumulo-trace-1.6.6-SNAPSHOT.pom
-
-[WARNING] The POM for org.apache.accumulo:accumulo-trace:jar:1.6.6-SNAPSHOT is missing, no dependency information available
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-fate/1.6.6-SNAPSHOT/accumulo-fate-1.6.6-SNAPSHOT.jar
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-start/1.6.6-SNAPSHOT/accumulo-start-1.6.6-SNAPSHOT.jar
-Downloading: http://repository.apache.org/snapshots/org/apache/accumulo/accumulo-trace/1.6.6-SNAPSHOT/accumulo-trace-1.6.6-SNAPSHOT.jar
-
-
-
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.749 s
-[INFO] Finished at: 2018-08-01T11:00:13+02:00
-[INFO] Final Memory: 16M/307M
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal on project accumulo-core: Could not resolve dependencies for project org.apache.accumulo:accumulo-core:jar:1.6.6-SNAPSHOT: The following artifacts could not be resolved: org.apache.accumulo:accumulo-fate:jar:1.6.6-SNAPSHOT, org.apache.accumulo:accumulo-start:jar:1.6.6-SNAPSHOT, org.apache.accumulo:accumulo-trace:jar:1.6.6-SNAPSHOT: Could not find artifact org.apache.accumulo:accumulo-fate:jar:1.6.6-SNAPSHOT in apache.snapshots (http://repository.apache.org/snapshots) -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-ERROR: A problem was encountered while rendering the report: Clover registry file "/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/clover/clover.db" does not exist, cannot be read or is a directory. 
-Please ensure Clover has instrumented your source files. 
-You may need to remove existing .class files for this to occur.
-[INFO] 
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 11.804 s
-[INFO] Finished at: 2018-08-01T11:00:15+02:00
-[INFO] Final Memory: 36M/384M
-[INFO] ------------------------------------------------------------------------
-cd dataset/august-2018/bugs-dot-jar/accumulo_buggy/core && ~/apache-maven-3.3.9/bin/mvn clean versions:use-latest-versions -Dincludes=junit:junit eu.stamp-project:diff-test-selection:0.2:list -DpathToDiff=../.bugs-dot-jar/developer-patch.diff -DpathToOtherVersion=../../accumulo_fixed/ -DoutputPath=../../../accumulo/data_test-selection_bugs-dot-jar_ACCUMULO-4138_50db442b.csv -Dreport=CSV
-rm -rf accumulo_fixed

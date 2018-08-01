@@ -1,2 +1,0 @@
-org.apache.commons.math.linear.SingularValueDecompositionImplTest;testConditionNumber;testVOrthogonal;testAEqualUSVt;testMoreRows;testHadamard;testUOrthogonal;testMatricesValues2;testMoreColumns;testDimensions;testMatricesValues1
-org.apache.commons.math.linear.SingularValueSolverTest;testSolve;testConditionNumber;testSolveDimensionErrors;testLeastSquareSolve;testMath320A;testMath320B

@@ -1,3 +1,0 @@
-org.apache.commons.math.random.RandomAdaptorTest;testNextPoisson;testNextPoissionConistency
-org.apache.commons.math.random.RandomDataTest;testNextPoisson;testNextPoissionConistency
-org.apache.commons.math.random.AbstractRandomGeneratorTest;testNextPoisson;testNextPoissionConistency

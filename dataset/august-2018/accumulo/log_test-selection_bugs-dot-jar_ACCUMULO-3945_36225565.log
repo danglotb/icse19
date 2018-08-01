@@ -1,95 +1,0 @@
-rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
-cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
-Previous HEAD position was d27326f45... Added bug report.
-HEAD is now at 82637647b... Added bug report.
-[INFO] Scanning for projects...
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Build Order:
-[INFO] 
-[INFO] Apache Accumulo
-[INFO] Fate
-[INFO] Start
-[INFO] Core
-[INFO] Trace
-[INFO] Server Base
-[INFO] Tracer Server
-[INFO] Shell
-[INFO] Simple Examples
-[INFO] GC Server
-[INFO] Master Server
-[INFO] Monitor Server
-[INFO] Tablet Server
-[INFO] MiniCluster
-[INFO] Native Libraries
-[INFO] Proxy
-[INFO] Testing
-[INFO] Assemblies
-[INFO] Documentation
-[INFO] Accumulo Maven Plugin
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building Apache Accumulo 1.7.1-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.18.1/maven-failsafe-plugin-2.18.1.pom
-3/9 KB   5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.18.1/maven-failsafe-plugin-2.18.1.pom (9 KB at 19.0 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.18.1/maven-failsafe-plugin-2.18.1.jar
-3/81 KB   5/81 KB   8/81 KB   11/81 KB   13/81 KB   16/81 KB   19/81 KB   21/81 KB   24/81 KB   27/81 KB   29/81 KB   32/81 KB   36/81 KB   40/81 KB   44/81 KB   48/81 KB   52/81 KB   56/81 KB   60/81 KB   64/81 KB   68/81 KB   72/81 KB   76/81 KB   80/81 KB   81/81 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/2.18.1/maven-failsafe-plugin-2.18.1.jar (81 KB at 112.7 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.1/findbugs-maven-plugin-3.0.1.pom
-4/21 KB    8/21 KB   12/21 KB   16/21 KB   20/21 KB   21/21 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.1/findbugs-maven-plugin-3.0.1.pom (21 KB at 51.4 KB/sec)
-Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.1/findbugs-maven-plugin-3.0.1.jar
-4/141 KB   8/141 KB   12/141 KB   16/141 KB   20/141 KB   24/141 KB   28/141 KB   32/141 KB   36/141 KB   40/141 KB   44/141 KB   48/141 KB   52/141 KB   56/141 KB   60/141 KB   64/141 KB   68/141 KB   72/141 KB   76/141 KB   80/141 KB   84/141 KB   88/141 KB   92/141 KB   96/141 KB   100/141 KB   104/141 KB   108/141 KB   112/141 KB   116/141 KB   120/141 KB   124/141 KB   128/141 KB   132/141 KB   136/141 KB   140/141 KB   141/141 KB                Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/findbugs-maven-plugin/3.0.1/findbugs-maven-plugin-3.0.1.jar (141 KB at 103.4 KB/sec)
-[INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-project ---
-[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy (includes = [**/*.pyc, **/*.so], excludes = [])
-[INFO] 
-[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-mvn) @ accumulo-project ---
-[INFO] 
-[INFO] --- mavanagaiata:0.7.1:commit (git-commit) @ accumulo-project ---
-[INFO] 
-[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-project ---
-[INFO] 70 implicit excludes (use -debug for more details).
-[INFO] No excludes explicitly specified.
-[INFO] 19 resources included (use -debug for more details)
-[INFO] Rat check: Summary of files. Unapproved: 4 unknown: 4 generated: 0 approved: 13 licence.
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary:
-[INFO] 
-[INFO] Apache Accumulo .................................... FAILURE [  5.972 s]
-[INFO] Fate ............................................... SKIPPED
-[INFO] Start .............................................. SKIPPED
-[INFO] Core ............................................... SKIPPED
-[INFO] Trace .............................................. SKIPPED
-[INFO] Server Base ........................................ SKIPPED
-[INFO] Tracer Server ...................................... SKIPPED
-[INFO] Shell .............................................. SKIPPED
-[INFO] Simple Examples .................................... SKIPPED
-[INFO] GC Server .......................................... SKIPPED
-[INFO] Master Server ...................................... SKIPPED
-[INFO] Monitor Server ..................................... SKIPPED
-[INFO] Tablet Server ...................................... SKIPPED
-[INFO] MiniCluster ........................................ SKIPPED
-[INFO] Native Libraries ................................... SKIPPED
-[INFO] Proxy .............................................. SKIPPED
-[INFO] Testing ............................................ SKIPPED
-[INFO] Assemblies ......................................... SKIPPED
-[INFO] Documentation ...................................... SKIPPED
-[INFO] Accumulo Maven Plugin .............................. SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.755 s
-[INFO] Finished at: 2018-08-01T11:04:46+02:00
-[INFO] Final Memory: 29M/316M
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.rat:apache-rat-plugin:0.11:check (check-licenses) on project accumulo-project: Too many files with unapproved license: 4 See RAT report in: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/target/rat.txt -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
-cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-3945_36225565 && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
-rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
-cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
-patching file server/master/src/main/java/org/apache/accumulo/master/tserverOps/ShutdownTServer.java
-cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff

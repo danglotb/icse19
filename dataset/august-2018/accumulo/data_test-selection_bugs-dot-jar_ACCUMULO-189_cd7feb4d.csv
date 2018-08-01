@@ -1,2 +1,0 @@
-org.apache.accumulo.core.client.mock.MockConnectorTest;testAggregation
-org.apache.accumulo.core.iterators.user.CombinerTest;maxMinTest;test4;test7;sumArrayTest;valueIteratorTest

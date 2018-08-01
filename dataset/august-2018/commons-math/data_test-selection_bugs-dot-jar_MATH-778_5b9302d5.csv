@@ -1,5 +1,0 @@
-org.apache.commons.math3.genetics.GeneticAlgorithmTestBinary;test
-org.apache.commons.math3.genetics.TournamentSelectionTest;testSelect
-org.apache.commons.math3.genetics.ElitisticListPopulationTest;testChromosomeListConstructorTooLow;testSetElitismRate;testSetElitismRateTooLow;testNextGeneration;testConstructorTooLow;testChromosomeListConstructorTooHigh;testConstructorTooHigh;testSetElitismRateTooHigh
-org.apache.commons.math3.genetics.FitnessCachingTest;testFitnessCaching
-org.apache.commons.math3.genetics.GeneticAlgorithmTestPermutations;test

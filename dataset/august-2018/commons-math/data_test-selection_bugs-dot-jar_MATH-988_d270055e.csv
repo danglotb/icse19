@@ -1,8 +1,0 @@
-org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest;testCircleFitting2
-org.apache.commons.math3.optimization.fitting.PolynomialFitterTest;testFit
-org.apache.commons.math3.optimization.general.LevenbergMarquardtOptimizerTest;testCircleFitting2
-org.apache.commons.math3.distribution.UniformRealDistributionTest;testMeanVariance;testSampling;testGetUpperBound;testInverseCumulativeDistribution;testGetLowerBound;testInverseCumulativeProbabilities
-org.apache.commons.math3.stat.descriptive.AggregateSummaryStatisticsTest;testAggregate;testAggregationConsistency
-org.apache.commons.math3.fitting.PolynomialFitterTest;testFit
-org.apache.commons.math3.util.MathUtilsTest;testPermutedArrayHash
-org.apache.commons.math3.random.EmpiricalDistributionTest;testKernelOverrideUniform

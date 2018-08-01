@@ -1,2 +1,0 @@
-org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest;testDefaultConfig;testDefaultContextConfigured;testCacheDirectoryConfigured;testDefaultCacheDirectory
-org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest;testModifiedClass;testReloading

@@ -1,3 +1,0 @@
-org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoaderTest;testDefaultConfig;testDefaultContextConfigured
-org.apache.accumulo.start.classloader.vfs.AccumuloReloadingVFSClassLoaderTest;testModifiedClass;testConstructor;testReloading
-org.apache.accumulo.start.classloader.vfs.ContextManagerTest;differentContexts;testPostDelegation

@@ -1,5 +1,0 @@
-org.apache.commons.math.analysis.solvers.PegasusSolverTest;testSolutionAboveSide;testSolutionRightSide;testSinZero;testSolutionBelowSide;testSolutionLeftSide;testQuinticZero
-org.apache.commons.math.ode.events.OverlappingEventsTest;testOverlappingEvents0;testOverlappingEvents1
-org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest;testSolutionAboveSide;testSolutionRightSide;testIssue631;testSinZero;testSolutionBelowSide;testSolutionLeftSide;testQuinticZero
-org.apache.commons.math.analysis.solvers.IllinoisSolverTest;testSolutionAboveSide;testSolutionRightSide;testSinZero;testSolutionBelowSide;testSolutionLeftSide;testQuinticZero
-org.apache.commons.math.ode.events.EventStateTest;closeEvents

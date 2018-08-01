@@ -1,4 +1,0 @@
-org.apache.accumulo.core.client.mock.MockConnectorTest;testDeletewithBatchDeleter;testSunnyDay
-org.apache.accumulo.core.iterators.user.IntersectingIteratorTest;testWithBatchScanner
-org.apache.accumulo.core.client.mock.TestBatchScanner821;test
-org.apache.accumulo.core.client.mock.MockTableOperationsTest;testCreateUseVersions

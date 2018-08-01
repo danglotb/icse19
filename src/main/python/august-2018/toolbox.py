@@ -30,7 +30,7 @@ def readTestToBeExecuted(project, branch):
 
 def get_all_branches_of_bugs(project):
     result = subprocess.check_output(
-        " ".join(["cd", prefix_bug_dot_jar + project, "&&", "git", "branch", "-a", "|", "grep", "bugs-dot-jar"]),
+        " ".join(["cd", prefix_bug_dot_jar + project, "&&", "git", "branch", "-a", "|", "grep", "remotes/origin/bugs-dot-jar"]),
         shell=True)
     return [x.split("/")[-1] for x in result.split("\n")]
 

@@ -1,0 +1,3 @@
+org.apache.commons.math.util.MathUtilsTest;testL2DistanceInt;testL2DistanceInt
+org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest;testPerformClusterAnalysisDegenerate;testPerformClusterAnalysisDegenerate;dimension2;dimension2
+org.apache.commons.math.stat.clustering.EuclideanIntegerPointTest;testDistance;testDistance

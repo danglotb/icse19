@@ -1,0 +1,4 @@
+org.apache.commons.math.random.AbstractRandomGeneratorTest;testNextPoissonConsistency;testNextExponential
+org.apache.commons.math.random.ValueServerTest;testModes
+org.apache.commons.math.random.RandomAdaptorTest;testNextPoissonConsistency;testNextExponential
+org.apache.commons.math.random.RandomDataTest;testNextPoissonConsistency;testNextExponential

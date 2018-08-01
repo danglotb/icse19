@@ -5,7 +5,6 @@ import os.path
 
 def run(project, lower_bound=1, upper_bound=-1):
     result = toolbox.get_all_branches_of_bugs(project)
-    print result
     print lower_bound, upper_bound
     for res in result[lower_bound:upper_bound]:
         print res

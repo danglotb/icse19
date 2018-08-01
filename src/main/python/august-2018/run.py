@@ -40,7 +40,16 @@ def run_one(project, branch):
                   "--cases", ":".join(test_methods)
                   ])
     )
-
+    toolbox.print_and_call(
+        " ".join([
+            "cp", "-r", "target/dspot/output/", toolbox.prefix_result + project + "/" + branch.split("/")[-1]
+        ])
+    )
+    toolbox.print_and_call(
+        " ".join([
+            "rm", "-rf", "target"
+        ])
+    )
 
 if __name__ == '__main__':
 

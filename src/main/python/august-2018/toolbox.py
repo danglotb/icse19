@@ -68,6 +68,7 @@ def initialize_project_for_branch(project, branch):
     print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_buggy]))
     path_to_project = prefix_bug_dot_jar + project + suffix_project_buggy
     # setting the branch
+    print_and_call(" ".join(["cd", path_to_project, "&&", maven_home + "mvn", "versions:use-latest-versions", "-Dincludes=junit:junit"]))
     print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_fixed]))
     print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_fixed]))
     # patching the second version

@@ -1,0 +1,1335 @@
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_buggy
+cp -r dataset/august-2018/bugs-dot-jar/accumulo dataset/august-2018/bugs-dot-jar/accumulo_buggy
+Previous HEAD position was 8c1d639... Added bug report.
+HEAD is now at d22f1b6... Added bug report.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo
+[INFO] Trace
+[INFO] Start
+[INFO] Fate
+[INFO] Core
+[INFO] Server
+[INFO] Examples
+[INFO] Simple Examples
+[INFO] Testing
+[INFO] Proxy
+[INFO] Assemble
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test (includes = [**/*.so], excludes = [])
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy
+[INFO] Storing buildNumber: null at timestamp: 1533111094157
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo/1.5.0-SNAPSHOT/accumulo-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/target/accumulo-1.5.0-SNAPSHOT-site.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo/1.5.0-SNAPSHOT/accumulo-1.5.0-SNAPSHOT-site.xml
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Trace 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-trace ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-trace ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace
+[INFO] Storing buildNumber: null at timestamp: 1533111099282
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-trace ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (generate-thrift) @ accumulo-trace ---
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.9
+*** generated code will not be updated
+****************************************************
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-trace ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-trace ---
+[INFO] Copying log4j-1.2.16.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/log4j-1.2.16.jar
+[INFO] Copying libthrift-0.9.0.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/libthrift-0.9.0.jar
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-trace ---
+[INFO] Compiling 22 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-trace ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-trace ---
+[INFO] Compiling 3 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-trace ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-trace ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-trace ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-trace ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-trace ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-trace ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-trace/1.5.0-SNAPSHOT/accumulo-trace-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/trace/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-trace/1.5.0-SNAPSHOT/accumulo-trace-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-trace/1.5.0-SNAPSHOT/accumulo-trace-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-trace-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-trace/1.5.0-SNAPSHOT/accumulo-trace-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Start 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-start ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-start ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start
+[INFO] Storing buildNumber: null at timestamp: 1533111106438
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-start ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-start ---
+[INFO] Copying commons-io-1.4.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-io-1.4.jar
+[INFO] Copying commons-vfs2-2.0.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-vfs2-2.0.jar
+[INFO] Copying commons-logging-1.0.4.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-logging-1.0.4.jar
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-start ---
+[INFO] Compiling 16 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-start ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Compiling 7 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-start ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-start ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-start ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-start ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-start ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-start/1.5.0-SNAPSHOT/accumulo-start-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/start/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-start/1.5.0-SNAPSHOT/accumulo-start-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-start/1.5.0-SNAPSHOT/accumulo-start-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-start-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-start/1.5.0-SNAPSHOT/accumulo-start-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Fate 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-fate ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-fate ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate
+[INFO] Storing buildNumber: null at timestamp: 1533111112704
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-fate ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-fate ---
+[INFO] Copying commons-lang-2.4.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-lang-2.4.jar
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-fate ---
+[INFO] Compiling 22 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-fate ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-fate ---
+[INFO] Compiling 4 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-fate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-fate ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-fate ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-fate ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-fate ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-fate ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.0-SNAPSHOT/accumulo-fate-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/fate/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.0-SNAPSHOT/accumulo-fate-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.0-SNAPSHOT/accumulo-fate-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-fate-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-fate/1.5.0-SNAPSHOT/accumulo-fate-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-core ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-core ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core
+[INFO] Storing buildNumber: null at timestamp: 1533111118636
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-core ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (generate-thrift) @ accumulo-core ---
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.9
+*** generated code will not be updated
+****************************************************
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-core ---
+[INFO] Copying jcommander-1.30.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/jcommander-1.30.jar
+[INFO] Copying commons-collections-3.2.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-collections-3.2.jar
+[INFO] Copying jline-0.9.94.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/jline-0.9.94.jar
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] commons-logging-1.0.4.jar already exists in destination.
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-core ---
+[INFO] Compiling 488 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-core ---
+[INFO] Compiling 77 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-core ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-core ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-core ---
+[INFO] org already added, skipping
+[INFO] org/apache already added, skipping
+[INFO] org/apache/accumulo already added, skipping
+[INFO] org/apache/accumulo/core already added, skipping
+[INFO] org/apache/accumulo/core/conf already added, skipping
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core-1.5.0-SNAPSHOT-sources.jar
+[INFO] org already added, skipping
+[INFO] org/apache already added, skipping
+[INFO] org/apache/accumulo already added, skipping
+[INFO] org/apache/accumulo/core already added, skipping
+[INFO] org/apache/accumulo/core/conf already added, skipping
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-core ---
+[INFO] org already added, skipping
+[INFO] org/apache already added, skipping
+[INFO] org/apache/accumulo already added, skipping
+[INFO] org/apache/accumulo/core already added, skipping
+[INFO] org/apache/accumulo/core/file already added, skipping
+[INFO] org/apache/accumulo/core/file/rfile already added, skipping
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] org already added, skipping
+[INFO] org/apache already added, skipping
+[INFO] org/apache/accumulo already added, skipping
+[INFO] org/apache/accumulo/core already added, skipping
+[INFO] org/apache/accumulo/core/file already added, skipping
+[INFO] org/apache/accumulo/core/file/rfile already added, skipping
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-core ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-core/1.5.0-SNAPSHOT/accumulo-core-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/core/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-core/1.5.0-SNAPSHOT/accumulo-core-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-core/1.5.0-SNAPSHOT/accumulo-core-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-core-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-core/1.5.0-SNAPSHOT/accumulo-core-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Server 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-server ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-server ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server
+[INFO] Storing buildNumber: null at timestamp: 1533111146077
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 38 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-server ---
+[INFO] Copying gson-2.2.2.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/gson-2.2.2.jar
+[INFO] Copying commons-configuration-1.5.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/commons-configuration-1.5.jar
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] commons-collections-3.2.jar already exists in destination.
+[INFO] jline-0.9.94.jar already exists in destination.
+[INFO] commons-io-1.4.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-server ---
+[INFO] Compiling 242 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-server ---
+[INFO] Compiling 22 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-server ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-server ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-server ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-server ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-server/1.5.0-SNAPSHOT/accumulo-server-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-server/1.5.0-SNAPSHOT/accumulo-server-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-server/1.5.0-SNAPSHOT/accumulo-server-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-server-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-server/1.5.0-SNAPSHOT/accumulo-server-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Examples 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-examples ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-examples ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples
+[INFO] Storing buildNumber: null at timestamp: 1533111160328
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-examples ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-examples ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples/1.5.0-SNAPSHOT/accumulo-examples-1.5.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Simple Examples 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-examples-simple ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-examples-simple ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple
+[INFO] Storing buildNumber: null at timestamp: 1533111160892
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-examples-simple ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-examples-simple ---
+[INFO] Copying log4j-1.2.16.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/lib/log4j-1.2.16.jar
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-examples-simple ---
+[INFO] Compiling 39 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-examples-simple ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-examples-simple ---
+[INFO] Compiling 5 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-examples-simple ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-examples-simple ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-examples-simple ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-examples-simple ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-examples-simple ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-examples-simple ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.5.0-SNAPSHOT/accumulo-examples-simple-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/examples/simple/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.5.0-SNAPSHOT/accumulo-examples-simple-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.5.0-SNAPSHOT/accumulo-examples-simple-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-examples-simple-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-examples-simple/1.5.0-SNAPSHOT/accumulo-examples-simple-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Testing 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-test ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-test ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test
+[INFO] Storing buildNumber: null at timestamp: 1533111168388
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-test ---
+[INFO] Compiling 182 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-test ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-test ---
+[INFO] Compiling 5 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-test ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-test ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-test ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-test ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-test ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-test ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-test/1.5.0-SNAPSHOT/accumulo-test-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/test/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-test/1.5.0-SNAPSHOT/accumulo-test-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-test/1.5.0-SNAPSHOT/accumulo-test-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-test-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-test/1.5.0-SNAPSHOT/accumulo-test-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Proxy 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-proxy ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-proxy ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy
+[INFO] Storing buildNumber: null at timestamp: 1533111178899
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (generate-thrift) @ accumulo-proxy ---
+****************************************************
+*** thrift is not available
+***   expecting 'thrift -version' to return 0.9
+*** generated code will not be updated
+****************************************************
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-proxy ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-proxy ---
+[INFO] Copying guava-13.0.1.jar to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/guava-13.0.1.jar
+[INFO] jcommander-1.30.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-proxy ---
+[INFO] Compiling 37 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ accumulo-proxy ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ accumulo-proxy ---
+[INFO] Compiling 5 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ accumulo-proxy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ accumulo-proxy ---
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy-1.5.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-proxy ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-proxy ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy-1.5.0-SNAPSHOT-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-proxy ---
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] Building jar: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy-1.5.0-SNAPSHOT-test-sources.jar
+[INFO] META-INF already added, skipping
+[INFO] META-INF/DEPENDENCIES already added, skipping
+[INFO] META-INF/NOTICE already added, skipping
+[INFO] META-INF/LICENSE already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-proxy ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy-1.5.0-SNAPSHOT.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-proxy/1.5.0-SNAPSHOT/accumulo-proxy-1.5.0-SNAPSHOT.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/proxy/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-proxy/1.5.0-SNAPSHOT/accumulo-proxy-1.5.0-SNAPSHOT.pom
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy-1.5.0-SNAPSHOT-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-proxy/1.5.0-SNAPSHOT/accumulo-proxy-1.5.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/lib/accumulo-proxy-1.5.0-SNAPSHOT-test-sources.jar to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-proxy/1.5.0-SNAPSHOT/accumulo-proxy-1.5.0-SNAPSHOT-test-sources.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Assemble 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-assemble ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-assemble ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble
+[INFO] Storing buildNumber: null at timestamp: 1533111195411
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- maven-site-plugin:3.2:attach-descriptor (attach-descriptor) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:jar-no-fork (attach-sources) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- maven-source-plugin:2.1.2:test-jar-no-fork (attach-sources) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:exec (config webpage) @ accumulo-assemble ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ accumulo-assemble ---
+[INFO] Installing /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/assemble/pom.xml to /home/spirals/danglot/.m2/repository/org/apache/accumulo/accumulo-assemble/1.5.0-SNAPSHOT/accumulo-assemble-1.5.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Apache Accumulo .................................... SUCCESS [  6.480 s]
+[INFO] Trace .............................................. SUCCESS [  6.771 s]
+[INFO] Start .............................................. SUCCESS [  6.823 s]
+[INFO] Fate ............................................... SUCCESS [  5.816 s]
+[INFO] Core ............................................... SUCCESS [ 27.430 s]
+[INFO] Server ............................................. SUCCESS [ 14.389 s]
+[INFO] Examples ........................................... SUCCESS [  0.451 s]
+[INFO] Simple Examples .................................... SUCCESS [  7.475 s]
+[INFO] Testing ............................................ SUCCESS [ 10.523 s]
+[INFO] Proxy .............................................. SUCCESS [ 16.582 s]
+[INFO] Assemble ........................................... SUCCESS [  1.735 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:45 min
+[INFO] Finished at: 2018-08-01T10:13:17+02:00
+[INFO] Final Memory: 164M/4292M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy && git checkout   remotes/origin/bugs-dot-jar_ACCUMULO-1051_25cf3ccd && ~/apache-maven-3.3.9/bin/mvn clean install -DskipTests
+rm -rf dataset/august-2018/bugs-dot-jar/accumulo_fixed
+cp -r dataset/august-2018/bugs-dot-jar/accumulo_buggy dataset/august-2018/bugs-dot-jar/accumulo_fixed
+patching file server/src/main/java/org/apache/accumulo/server/constraints/MetadataConstraints.java
+cd dataset/august-2018/bugs-dot-jar/accumulo_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Server 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-server ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ accumulo-server ---
+[INFO] Major version changes allowed
+[INFO] 
+[INFO] --- diff-test-selection:0.2:list (default-cli) @ accumulo-server ---
+[INFO] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server
+[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Server 1.5.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ accumulo-server ---
+[INFO] Deleting /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server (includes = [**/*.pyc], excludes = [])
+[INFO] 
+[INFO] --- clover-maven-plugin:4.2.0:setup (default-cli) @ accumulo-server ---
+[INFO] No 'maven.clover.licenseLocation' configured. Using default license.
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Creating new database at '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 242 files (36 packages).
+[INFO] Elapsed time = 10.671 secs. (22.678 files/sec, 4,378.128 srclines/sec)
+[INFO] OpenClover Version 4.2.0, built on April 30 2017 (build-1000)
+[INFO] Loaded from: /home/spirals/danglot/.m2/repository/org/openclover/clover/4.2.0/clover-4.2.0.jar
+[INFO] Clover free edition.
+[INFO] Updating existing database at '/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/clover.db'.
+[INFO] Processing files at 1.8 source level.
+[INFO] Clover all over. Instrumented 22 files (14 packages).
+[INFO] 64 test methods detected.
+[INFO] Elapsed time = 0.784 secs. (28.061 files/sec, 4,640.306 srclines/sec)
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ accumulo-server ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server
+[INFO] Storing buildNumber: null at timestamp: 1533111226497
+[INFO] Executing: /bin/sh -c cd /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server && svn --non-interactive info
+[INFO] Working directory: /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-mvn) @ accumulo-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.3:process (default) @ accumulo-server ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ accumulo-server ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 38 resources
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:copy-dependencies (copy-dependencies) @ accumulo-server ---
+[INFO] gson-2.2.2.jar already exists in destination.
+[INFO] log4j-1.2.16.jar already exists in destination.
+[INFO] commons-collections-3.2.jar already exists in destination.
+[INFO] jline-0.9.94.jar already exists in destination.
+[INFO] commons-io-1.4.jar already exists in destination.
+[INFO] libthrift-0.9.0.jar already exists in destination.
+[INFO] commons-configuration-1.5.jar already exists in destination.
+[INFO] commons-lang-2.4.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ accumulo-server ---
+[INFO] Compiling 242 source files to /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[55,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[58,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[82,40] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[83,47] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[90,31] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.fate
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/LiveTServerSet.java:[30,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[25,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[26,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[27,54] error: package org.apache.accumulo.core.client.security.tokens does not exist
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[30,40] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[33,47] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/balancer/TabletBalancer.java:[26,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authorizor.java:[20,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authorizor.java:[22,47] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[22,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[23,54] error: package org.apache.accumulo.core.client.security.tokens does not exist
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[24,47] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[31,80] error: package org.apache.accumulo.core.security.handler does not exist
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/PermissionHandler.java:[21,50] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.client.impl.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/PermissionHandler.java:[24,47] error: cannot find symbol
+[ERROR]  package org.apache.accumulo.core.security.thrift
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[116,33] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[116,129] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[139,28] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[139,61] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[160,33] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[160,79] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[167,34] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[167,60] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[167,88] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[185,46] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[185,10] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[193,46] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[193,92] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[212,46] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[212,79] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[221,106] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[241,118] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[262,40] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[262,86] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[270,52] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[282,25] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[282,72] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[287,26] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[287,73] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[292,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[292,79] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[302,41] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[302,74] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[307,26] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[307,65] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[313,31] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[313,70] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[319,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[319,55] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[324,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[324,71] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[330,31] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[330,70] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[336,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[336,71] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[342,39] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[342,78] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[348,26] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[348,65] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[354,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[354,71] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[359,31] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[359,70] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[364,28] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[364,67] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[371,41] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[371,77] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[378,35] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[378,71] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[385,31] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[385,67] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[395,29] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[395,65] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[405,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[405,94] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[419,31] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[419,81] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[430,33] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[430,95] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[444,32] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[444,82] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[455,35] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[455,112] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[469,29] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[469,55] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[469,85] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[481,25] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[481,51] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[481,111] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[497,23] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[497,69] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[510,36] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[510,115] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[524,35] error: cannot find symbol
+[ERROR]  class SecurityOperation
+/tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[524,115] error: cannot find symbol
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.649 s
+[INFO] Finished at: 2018-08-01T10:14:00+02:00
+[INFO] Final Memory: 41M/1600M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile) on project accumulo-server: Compilation failure: Compilation failure:
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[55,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[58,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[82,40] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[83,47] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/Master.java:[90,31] error: cannot find symbol
+[ERROR] package org.apache.accumulo.fate
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/LiveTServerSet.java:[30,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[25,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[26,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[27,54] error: package org.apache.accumulo.core.client.security.tokens does not exist
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[30,40] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[33,47] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/master/balancer/TabletBalancer.java:[26,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authorizor.java:[20,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authorizor.java:[22,47] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[22,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[23,54] error: package org.apache.accumulo.core.client.security.tokens does not exist
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[24,47] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/Authenticator.java:[31,80] error: package org.apache.accumulo.core.security.handler does not exist
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/PermissionHandler.java:[21,50] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.client.impl.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/handler/PermissionHandler.java:[24,47] error: cannot find symbol
+[ERROR] package org.apache.accumulo.core.security.thrift
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[116,33] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[116,129] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[139,28] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[139,61] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[160,33] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[160,79] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[167,34] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[167,60] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[167,88] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[185,46] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[185,10] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[193,46] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[193,92] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[212,46] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[212,79] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[221,106] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[241,118] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[262,40] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[262,86] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[270,52] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[282,25] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[282,72] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[287,26] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[287,73] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[292,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[292,79] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[302,41] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[302,74] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[307,26] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[307,65] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[313,31] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[313,70] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[319,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[319,55] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[324,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[324,71] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[330,31] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[330,70] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[336,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[336,71] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[342,39] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[342,78] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[348,26] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[348,65] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[354,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[354,71] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[359,31] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[359,70] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[364,28] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[364,67] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[371,41] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[371,77] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[378,35] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[378,71] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[385,31] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[385,67] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[395,29] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[395,65] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[405,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[405,94] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[419,31] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[419,81] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[430,33] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[430,95] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[444,32] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[444,82] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[455,35] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[455,112] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[469,29] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[469,55] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[469,85] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[481,25] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[481,51] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[481,111] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[497,23] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[497,69] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[510,36] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[510,115] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[524,35] error: cannot find symbol
+[ERROR] class SecurityOperation
+[ERROR] /tmp/icse19/dataset/august-2018/bugs-dot-jar/accumulo_buggy/server/target/clover/src-instrumented/org/apache/accumulo/server/security/SecurityOperation.java:[524,115] error: cannot find symbol
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+WARN: No coverage recordings found. No report will be generated.
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 43.535 s
+[INFO] Finished at: 2018-08-01T10:14:05+02:00
+[INFO] Final Memory: 31M/1516M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/accumulo_buggy/server && ~/apache-maven-3.3.9/bin/mvn clean versions:use-latest-versions -Dincludes=junit:junit eu.stamp-project:diff-test-selection:0.2:list -DpathToDiff=../.bugs-dot-jar/developer-patch.diff -DpathToOtherVersion=../../accumulo_fixed/ -DoutputPath=../../../accumulo/data_test-selection_bugs-dot-jar_ACCUMULO-1051_25cf3ccd.csv -Dreport=CSV
+rm -rf accumulo_fixed

@@ -1,0 +1,2 @@
+org.apache.accumulo.proxy.SimpleTest;testSecurityOperations;tableNotFound;testTableOperations;testBatchWriter;tableNotFound
+org.apache.accumulo.proxy.TestProxyTableOperations;tableProperties;listRename;constraints

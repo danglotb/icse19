@@ -1,0 +1,2 @@
+org.apache.commons.math.stat.correlation.PearsonsCorrelationTest;testCovarianceConsistency;testLongly;testPValueNearZero;testSwissFertility;testStdErrorConsistency
+org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest;testPValueNearZero;testSwissFertility

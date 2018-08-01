@@ -54,10 +54,24 @@ def print_and_call(cmd):
         f.write(cmd + "\n")
         return subprocess.call(cmd, shell=True, stdout=f, stderr=f)
 
-
 # this method clean, checkout the correct branch and install.
 # then it copies the project into ../project_fixed and apply the developer patch
 def initialize_project_for_branch(project, branch):
+    global maven_home
+    # copy the buggy version to keep it clean...
+    path_to_project = prefix_bug_dot_jar + project
+    print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_buggy]))
+    print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_buggy]))
+    path_to_project = prefix_bug_dot_jar + project + suffix_project_buggy
+    # setting the branch
+    print_and_call(" ".join(["cd", path_to_project, "&&", "git", "checkout", branch]))
+    print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_fixed]))
+    print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_fixed]))
+    # patching the second version
+    print_and_call(
+        " ".join(["cd", prefix_bug_dot_jar + project + suffix_project_fixed, "&&", "patch", "-p1", "<", relative_patch_path]))
+
+def initialize_project_for_branch_with_build(project, branch):
     global maven_home
     # copy the buggy version to keep it clean...
     path_to_project = prefix_bug_dot_jar + project

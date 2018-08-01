@@ -16,7 +16,7 @@ def run_one(project, branch):
     if os.path.isfile(path_to_csv):
         print "already computed!"
         return
-    toolbox.initialize_project_for_branch(project, branch)
+    toolbox.initialize_project_for_branch_with_build(project, branch)
     # run maven plugin to compute the list
     code = toolbox.print_and_call(
         " ".join(

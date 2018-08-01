@@ -61,10 +61,10 @@ def initialize_project_for_branch(project, branch):
     # copy the buggy version to keep it clean...
     path_to_project = prefix_bug_dot_jar + project
     print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_buggy]))
+    print_and_call(" ".join(["cd", path_to_project, "&&", "git", "checkout", branch]))
     print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_buggy]))
     path_to_project = prefix_bug_dot_jar + project + suffix_project_buggy
     # setting the branch
-    print_and_call(" ".join(["cd", path_to_project, "&&", "git", "checkout", branch]))
     print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_fixed]))
     print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_fixed]))
     # patching the second version
@@ -76,12 +76,11 @@ def initialize_project_for_branch_with_build(project, branch):
     # copy the buggy version to keep it clean...
     path_to_project = prefix_bug_dot_jar + project
     print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_buggy]))
+    print_and_call(" ".join(["cd", path_to_project, "&&", "git", "checkout", branch]))
     print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_buggy]))
     path_to_project = prefix_bug_dot_jar + project + suffix_project_buggy
     # setting the branch
-    print_and_call(" ".join(["cd", path_to_project, "&&",
-                             "git", "checkout", branch, "&&",
-                             maven_home + "mvn", "clean", "install", "-DskipTests"]))
+    print_and_call(" ".join(["cd", path_to_project, "&&", maven_home + "mvn", "clean", "install", "-DskipTests"]))
     print_and_call(" ".join(["rm", "-rf", prefix_bug_dot_jar + project + suffix_project_fixed]))
     print_and_call(" ".join(["cp", "-r", path_to_project, prefix_bug_dot_jar + project + suffix_project_fixed]))
     # patching the second version

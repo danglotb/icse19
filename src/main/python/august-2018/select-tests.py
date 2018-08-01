@@ -6,7 +6,7 @@ def run(project, lower_bound=1, upper_bound=-1):
     result = toolbox.get_all_branches_of_bugs(project)
     print lower_bound, upper_bound
     for res in result[lower_bound:upper_bound]:
-        run_one(project, res)
+        run_one(project, "remotes/origin/bugs-dot-jar_MATH-865_b55e0206")
 
 def run_one(project, branch):
     # getting the concerned module
@@ -18,7 +18,7 @@ def run_one(project, branch):
         return
     toolbox.initialize_project_for_branch_with_build(project, branch)
     # run maven plugin to compute the list
-    code = toolbox.print_and_call(
+    '''code = toolbox.print_and_call(
         " ".join(
             ["cd", toolbox.prefix_bug_dot_jar + project + toolbox.suffix_project_buggy + "/" + targetModule, "&&",
              toolbox.maven_home + "mvn", "clean",
@@ -33,7 +33,7 @@ def run_one(project, branch):
         )
     )
     print code
-    toolbox.print_and_call(" ".join(["rm", "-rf", project + toolbox.suffix_project_fixed]))
+    toolbox.print_and_call(" ".join(["rm", "-rf", project + toolbox.suffix_project_fixed]))'''
 
 
 if __name__ == '__main__':

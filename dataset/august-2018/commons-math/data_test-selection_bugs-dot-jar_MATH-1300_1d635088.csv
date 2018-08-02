@@ -1,0 +1,12 @@
+org.apache.commons.math4.random.AbstractRandomGeneratorTest;testNexBytes;testNextHex
+org.apache.commons.math4.random.ISAACTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.Well19937aTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.BitsStreamGeneratorTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.MersenneTwisterTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.Well512aTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.Well19937cTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.Well1024aTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.Well44497aTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.RandomDataGeneratorTest;testNextHex
+org.apache.commons.math4.random.Well44497bTest;testNexBytes;testNextHex;testNextBytesChunks
+org.apache.commons.math4.random.SynchronizedRandomGeneratorTest;testAdapter

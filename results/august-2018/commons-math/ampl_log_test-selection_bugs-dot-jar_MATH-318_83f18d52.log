@@ -1,0 +1,40 @@
+rm -rf dataset/august-2018/bugs-dot-jar/commons-math_buggy
+Switched to branch 'bugs-dot-jar_MATH-318_83f18d52'
+Your branch is up-to-date with 'origin/bugs-dot-jar_MATH-318_83f18d52'.
+cd dataset/august-2018/bugs-dot-jar/commons-math && git checkout bugs-dot-jar_MATH-318_83f18d52
+cp -r dataset/august-2018/bugs-dot-jar/commons-math dataset/august-2018/bugs-dot-jar/commons-math_buggy
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:2.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:12, /home/spirals/danglot/.m2/repository/org/apache/commons/commons-parent/12/commons-parent-12.pom, line 266, column 15
+[WARNING] The expression ${pom.version} is deprecated. Please use ${project.version} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ commons-math ---
+[INFO] Major version changes allowed
+[INFO] Updated junit:junit:jar:4.4 to version 4.12
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.872 s
+[INFO] Finished at: 2018-08-01T22:53:16+02:00
+[INFO] Final Memory: 17M/304M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/commons-math_buggy && ~/apache-maven-3.3.9/bin/mvn versions:use-latest-versions -Dincludes=junit:junit
+rm -rf dataset/august-2018/bugs-dot-jar/commons-math_fixed
+cp -r dataset/august-2018/bugs-dot-jar/commons-math_buggy dataset/august-2018/bugs-dot-jar/commons-math_fixed
+patching file src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+cd dataset/august-2018/bugs-dot-jar/commons-math_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff
+Error: Unable to access jarfile /tmp/dspot/dspot/target/dspot-1.1.1-SNAPSHOT-jar-with-dependencies.jar
+~/jdk1.8.0_121/bin/java -XX:-UseGCOverheadLimit -XX:-OmitStackTraceInFastThrow -jar /tmp/dspot/dspot/target/dspot-1.1.1-SNAPSHOT-jar-with-dependencies.jar --path-to-properties dataset/august-2018/commons-math/commons-math.properties --verbose --no-minimize --working-directory --output-path results/august-2018/commons-math/bugs-dot-jar_MATH-318_83f18d52 --amplifiers None --test-criterion ChangeDetectorSelector --test org.apache.commons.math.linear.EigenDecompositionImplTest --cases testMathpbx02
+cp: cannot stat 'target/dspot/output/': No such file or directory
+cp -r target/dspot/output/ results/august-2018/commons-math/bugs-dot-jar_MATH-318_83f18d52
+rm -rf target

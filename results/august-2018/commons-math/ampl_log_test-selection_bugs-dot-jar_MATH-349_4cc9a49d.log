@@ -1,0 +1,35 @@
+rm -rf dataset/august-2018/bugs-dot-jar/commons-math_buggy
+Switched to branch 'bugs-dot-jar_MATH-349_4cc9a49d'
+Your branch is up-to-date with 'origin/bugs-dot-jar_MATH-349_4cc9a49d'.
+cd dataset/august-2018/bugs-dot-jar/commons-math && git checkout bugs-dot-jar_MATH-349_4cc9a49d
+cp -r dataset/august-2018/bugs-dot-jar/commons-math dataset/august-2018/bugs-dot-jar/commons-math_buggy
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.commons:commons-math:jar:3.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:15, /home/spirals/danglot/.m2/repository/org/apache/commons/commons-parent/15/commons-parent-15.pom, line 329, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Commons Math 3.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.5:use-latest-versions (default-cli) @ commons-math ---
+[INFO] Major version changes allowed
+[INFO] Updated junit:junit:jar:4.4 to version 4.12
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.989 s
+[INFO] Finished at: 2018-08-01T22:53:49+02:00
+[INFO] Final Memory: 18M/304M
+[INFO] ------------------------------------------------------------------------
+cd dataset/august-2018/bugs-dot-jar/commons-math_buggy && ~/apache-maven-3.3.9/bin/mvn versions:use-latest-versions -Dincludes=junit:junit
+rm -rf dataset/august-2018/bugs-dot-jar/commons-math_fixed
+cp -r dataset/august-2018/bugs-dot-jar/commons-math_buggy dataset/august-2018/bugs-dot-jar/commons-math_fixed
+patching file src/main/java/org/apache/commons/math/distribution/PoissonDistribution.java
+patching file src/main/java/org/apache/commons/math/distribution/PoissonDistributionImpl.java
+cd dataset/august-2018/bugs-dot-jar/commons-math_fixed && patch -p1 < .bugs-dot-jar/developer-patch.diff

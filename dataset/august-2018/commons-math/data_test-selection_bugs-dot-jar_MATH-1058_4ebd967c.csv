@@ -1,0 +1,14 @@
+org.apache.commons.math3.distribution.LogNormalDistributionTest;testMeanVariance;testTinyVariance;testSampling;testInverseCumulativeProbabilities
+org.apache.commons.math3.random.Well44497aTest;testNextWeibull
+org.apache.commons.math3.random.Well19937aTest;testNextWeibull
+org.apache.commons.math3.random.RandomDataGeneratorTest;testNextWeibull
+org.apache.commons.math3.random.ISAACTest;testNextWeibull
+org.apache.commons.math3.random.RandomGeneratorFactoryTest;testNextWeibull
+org.apache.commons.math3.distribution.WeibullDistributionTest;testInverseCumulativeProbabilitySmallPAccuracy;testDistributionClone;testSampling;testInverseCumulativeProbabilities
+org.apache.commons.math3.random.MersenneTwisterTest;testNextWeibull
+org.apache.commons.math3.random.AbstractRandomGeneratorTest;testNextWeibull
+org.apache.commons.math3.random.Well512aTest;testNextWeibull
+org.apache.commons.math3.random.BitsStreamGeneratorTest;testNextWeibull
+org.apache.commons.math3.random.Well19937cTest;testNextWeibull
+org.apache.commons.math3.random.Well44497bTest;testNextWeibull
+org.apache.commons.math3.random.Well1024aTest;testNextWeibull

@@ -1,0 +1,4 @@
+org.apache.commons.math3.geometry.enclosing.WelzlEncloser3DTest;testReducingBall;testLargeSamples;testInfiniteLoop
+org.apache.commons.math3.geometry.euclidean.threed.SphereGeneratorTest;testSupport3Points;testDegeneratedCase;testSupport4Points;testRandom
+org.apache.commons.math3.geometry.enclosing.WelzlEncloser2DTest;testReducingBall1;testLargeSamples;testReducingBall2;testRegularPoints
+org.apache.commons.math3.geometry.euclidean.twod.DiskGeneratorTest;testSupport3Points;testRandom
